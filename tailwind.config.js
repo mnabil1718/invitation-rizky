@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        '0\.25': '1px',
+      },
       screens: {
         'break-750': '750px',
       },

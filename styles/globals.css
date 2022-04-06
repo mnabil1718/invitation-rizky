@@ -9,10 +9,22 @@
   src: url("/fonts/LemonMelon.ttf") format("truetype");
 }
 
+.title {
+  @apply font-lemon text-7xl;
+}
+
 .subheadline {
   @apply font-alice text-3xl;
 }
 
+.body {
+  @apply font-lora text-base leading-loose;
+}
+
 .small {
   @apply font-lora text-xs;
+}
+
+.outline-button {
+  @apply py-3 px-5 border border-neutral rounded-full hover:text-dark hover:bg-neutral transition ease-out duration-300;
 }
