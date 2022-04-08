@@ -14,6 +14,9 @@ module.exports = {
       letterSpacing: {
         '6': '.6em',
       },
+      rotate: {
+        '20': '20deg',
+      },
       colors: {
         'neutral': '#F8FAF8',
         'primary': '#CDDEEC',
@@ -27,6 +30,7 @@ module.exports = {
         alice: ["Alice", "serif"],
         lemon: ["Lemon", "sans-serif"],
         vazirmatn: ["Vazirmatn", "sans-serif"],
+        work: ["Work Sans", "sans-serif"],
 
       }
     },

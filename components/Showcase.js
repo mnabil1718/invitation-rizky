@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Showcase() {
     return (
-        <section style={{ backgroundImage: 'url("/png/paper1.png")' }} className="w-full">
+        <section style={{ backgroundImage: 'url("/png/paper1.png")' }}>
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <div className="absolute top-14 left-28">
                     <Image className='drop-shadow-md' src="/svg/bird.svg" alt="bird" width={56} height={56} />
@@ -18,8 +18,8 @@ export default function Showcase() {
                 <div className="absolute z-10 left-0 top-14">
                     <Image className='drop-shadow-md' src="/png/cloud.png" alt="cloud" width={98} height={98} />
                 </div>
-                <div className="absolute z-10 -right-14 top-16">
-                    <Image style={{ transform: 'scaleX(-1)' }} className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={143} />
+                <div className="absolute z-10 -right-14 top-16 transform -scale-x-100">
+                    <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={143} />
                 </div>
                 <h2 className="subheadline mb-4">You are invited to</h2>
                 <Image className='drop-shadow-md' src="/svg/figure.svg" alt="Muslim wedding" width={317} height={340} priority />
