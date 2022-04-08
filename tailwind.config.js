@@ -26,6 +26,7 @@ module.exports = {
         lora: ["Lora", "serif"],
         alice: ["Alice", "serif"],
         lemon: ["Lemon", "sans-serif"],
+        vazirmatn: ["Vazirmatn", "sans-serif"],
 
       }
     },

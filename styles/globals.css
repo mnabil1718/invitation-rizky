@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +16,10 @@
 
 .subheadline {
   @apply font-alice text-3xl;
+}
+
+.subheadline-small {
+  @apply font-alice text-2xl;
 }
 
 .body {
