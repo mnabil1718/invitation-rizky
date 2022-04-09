@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Event() {
     return (
-        <section style={{ backgroundImage: 'url("/png/wall-texture.png")' }} className="relative text-neutral">
+        <section id='event' style={{ backgroundImage: 'url("/png/wall-texture.png")' }} className="relative text-neutral">
             <div className="max-w-screen-lg mx-auto flex flex-col px-20 lg:px-0 lg:flex-row justify-center items-center pb-24 pt-16 md:pt-28 lg:pt-36 space-x-0 space-y-10 lg:space-y-0">
                 <div className='text-center lg:basis-1/5'>
                     <h1 className='title mb-5'>Akad Nikah</h1>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Showcase() {
     return (
-        <section style={{ backgroundImage: 'url("/png/paper1.png")' }}>
+        <section id='showcase' style={{ backgroundImage: 'url("/png/paper1.png")' }}>
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <div className="absolute top-14 left-28">
                     <Image className='drop-shadow-md' src="/svg/bird.svg" alt="bird" width={56} height={56} />

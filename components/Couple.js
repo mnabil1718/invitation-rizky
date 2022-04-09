@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Couple() {
     return (
-        <section style={{ backgroundImage: 'url("/png/paper1.png")' }} className="w-full relative text-dark">
+        <section id='couple' style={{ backgroundImage: 'url("/png/paper1.png")' }} className="w-full relative text-dark">
             <div className='w-full z-10 h-48 absolute -top-24 left-0'>
                 <Image src='/svg/paper-rip.svg' alt="paper rip" layout='fill' />
             </div>

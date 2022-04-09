@@ -31,7 +31,7 @@ export default function Ayat() {
 
 
     return (
-        <section style={{ backgroundImage: 'url("/png/night-texture.png")' }} className="w-full relative overflow-y-hidden text-neutral">
+        <section id='ayat' style={{ backgroundImage: 'url("/png/night-texture.png")' }} className="w-full relative overflow-y-hidden text-neutral">
             <div className="max-w-screen-sm relative text-center mx-auto pt-12 pb-96 z-20">
                 <p className='body text-center px-3 mb-7'>&quot;Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda kebesaran Allah bagi kaum yang berpikir.&quot;</p>
                 <div className="flex items-center justify-center space-x-5 mb-8">
@@ -63,7 +63,7 @@ export default function Ayat() {
                 <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTVycHUxcjRtb21hZ2Nocmw0ZWVzMHNlNGsgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><button className='outline-button'>Simpan Tanggal</button></a></Link>
             </div>
             <div className='absolute bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4'>
-                <Image src={NightScenery} alt="night scenery" placeholder='blur' objectFit='cover' objectPosition='0 0%' />
+                <Image src={NightScenery} alt="night scenery" placeholder='blur' objectFit='cover' priority objectPosition='0 0%' />
             </div>
         </section>
     )
