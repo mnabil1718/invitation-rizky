@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Event() {
     return (
@@ -9,7 +10,8 @@ export default function Event() {
                     <h2 className='subheadline'>Sabtu, 14 Mei 2022</h2>
                     <p className="body">Pukul 08.00 WITA - Selesai</p>
                     <div className="h-0.25 bg-neutral w-20 mx-auto my-5"></div>
-                    <p className="body">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</p>
+                    <p className="body mb-5">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</p>
+                    <Link href="#"><a target="_blank"><button className='outline-button'>Live Instagram</button></a></Link>
                 </div>
                 <div className='lg:basis-2/5 text-center'>
                     <Image src='/png/window.png' alt='window' width={250} height={250} priority placeholder='blur' blurDataURL='/png/window.png' />

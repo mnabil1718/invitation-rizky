@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import PaperTexture from '../public/png/paper1.png'
 
 export default function Showcase() {
     return (
-        <section id='showcase' style={{ backgroundImage: 'url("/png/paper1.png")' }}>
+        <section id='showcase' className='relative'>
+            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <div className="absolute top-14 left-28">
                     <Image className='drop-shadow-md' src="/svg/bird.svg" alt="bird" width={56} height={56} />
@@ -14,7 +16,7 @@ export default function Showcase() {
                     <Image className='drop-shadow-md' src="/png/cloud3.png" alt="cloud" width={97} height={97} />
                 </div>
             </div>
-            <div className="max-w-screen-sm relative text-center mx-auto overflow-hidden break-750:overflow-visible">
+            <div className="max-w-screen-sm relative text-center mx-auto">
                 <div className="absolute z-10 left-0 top-14">
                     <Image className='drop-shadow-md' src="/png/cloud.png" alt="cloud" width={98} height={98} />
                 </div>
@@ -22,7 +24,7 @@ export default function Showcase() {
                     <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={143} />
                 </div>
                 <h2 className="subheadline mb-4">You are invited to</h2>
-                <Image className='drop-shadow-md' src="/svg/figure.svg" alt="Muslim wedding" width={317} height={340} priority />
+                <Image className='drop-shadow-md' src="/svg/figure.svg" alt="Muslim wedding" width={317} height={340} placeholder="blur" blurDataURL='/svg/figure.svg' priority />
                 <p className='small tracking-6'>The wedding of</p>
                 <div className="relative w-fit mx-auto">
                     <div className="z-10 absolute -top-5 -left-4">

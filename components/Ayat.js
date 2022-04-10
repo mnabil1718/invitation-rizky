@@ -63,7 +63,7 @@ export default function Ayat() {
                 <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTVycHUxcjRtb21hZ2Nocmw0ZWVzMHNlNGsgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><button className='outline-button'>Simpan Tanggal</button></a></Link>
             </div>
             <div className='absolute bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4'>
-                <Image src={NightScenery} alt="night scenery" placeholder='blur' objectFit='cover' priority objectPosition='0 0%' />
+                <Image src={NightScenery} alt="night scenery" placeholder='blur' objectFit='cover' objectPosition='0 0%' />
             </div>
         </section>
     )

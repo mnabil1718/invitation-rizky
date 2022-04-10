@@ -12,7 +12,6 @@ export default function SoundButton() {
     const [isPlaying, setIsPlaying] = useState(false)
     const playPauseHandler = () => {
         setIsPlaying(!isPlaying)
-        console.log(isPlaying)
     }
 
     return (

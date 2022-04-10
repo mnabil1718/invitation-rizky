@@ -15,28 +15,28 @@ export default function Couple() {
                         <Image className='drop-shadow-md' src='/png/airplane2.png' alt='paper airplane' width={87} height={87} />
                     </div>
                     <div className='transform rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame.png' alt='photo' width={198.69} height={232} />
+                        <Image className='drop-shadow-md' src='/png/photo-frame.png' alt='photo' width={198.69} height={232} priority />
                     </div>
                 </div>
                 <h3 className='subheadline-small mb-2'>Lalu Rizky Adriansyah, S.E.</h3>
                 <p className="body">Putra dari Bpk. Lalu Supardi, S.H. & Ibu Fitriani</p>
-                <div className='absolute right-16 sm:right-32'>
+                <div className='absolute right-10 sm:right-32'>
                     <Image className='drop-shadow-md' src='/png/camera.png' alt='camera' width={105} height={105} />
                 </div>
                 <div className='my-12'>
                     <Image src='/svg/love-line.svg' alt='line' width={1440} height={266} />
                 </div>
                 <div className="relative mb-7">
-                    <div className='absolute z-10 top-32 right-24 sm:right-44'>
+                    <div className='absolute z-10 top-32 right-10 sm:right-44'>
                         <Image className='drop-shadow-md' src='/png/airplane.png' alt='paper airplane' width={87} height={87} />
                     </div>
                     <div className='transform -rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame2.png' alt='photo' width={198.69} height={232} />
+                        <Image className='drop-shadow-md' src='/png/photo-frame2.png' alt='photo' width={198.69} height={232} priority />
                     </div>
                 </div>
                 <h3 className='subheadline-small'>Aisyah As-Salafiyah, S.H.</h3>
                 <p className="body">Putri dari Bpk. Dr. Abdurrahman Misno B. P. & Ibu Mulyani</p>
-                <div className="relative -left-52 -top-4">
+                <div className="relative -left-36 sm:-left-52 -top-4">
                     <Image className='drop-shadow-md' src='/png/book.png' alt='book' width={175} height={175} />
                 </div>
             </div>
