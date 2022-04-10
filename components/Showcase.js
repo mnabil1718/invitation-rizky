@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import PaperTexture from '../public/png/paper1.png'
+import TitleText from '../public/svg/title.svg'
 
 export default function Showcase() {
     return (
@@ -30,7 +31,7 @@ export default function Showcase() {
                     <div className="z-10 absolute -top-5 -left-4">
                         <Image className='drop-shadow-md' src="/svg/bird3.svg" alt="bird" width={50} height={50} />
                     </div>
-                    <Image src='/svg/title.svg' alt="Rizky dan Aisyah" width={291} height={86} />
+                    <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/svg/title.svg' />
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                     <div className='bg-dark h-0.25 w-12'></div>

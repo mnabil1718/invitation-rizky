@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import PaperTexture from '../public/png/paper1.png'
 
 export default function Couple() {
     return (
-        <section id='couple' style={{ backgroundImage: 'url("/png/paper1.png")' }} className="w-full relative text-dark">
+        <section id='couple' className="w-full relative text-dark">
+            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <div className='w-full z-10 h-48 absolute -top-24 left-0'>
                 <Image src='/svg/paper-rip.svg' alt="paper rip" layout='fill' />
             </div>
@@ -15,7 +17,7 @@ export default function Couple() {
                         <Image className='drop-shadow-md' src='/png/airplane2.png' alt='paper airplane' width={87} height={87} />
                     </div>
                     <div className='transform rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame.png' alt='photo' width={198.69} height={232} priority />
+                        <Image className='drop-shadow-md' src='/png/photo-frame.png' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/png/photo-frame.png' priority />
                     </div>
                 </div>
                 <h3 className='subheadline-small mb-2'>Lalu Rizky Adriansyah, S.E.</h3>
@@ -31,7 +33,7 @@ export default function Couple() {
                         <Image className='drop-shadow-md' src='/png/airplane.png' alt='paper airplane' width={87} height={87} />
                     </div>
                     <div className='transform -rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame2.png' alt='photo' width={198.69} height={232} priority />
+                        <Image className='drop-shadow-md' src='/png/photo-frame2.png' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/png/photo-frame2.png' priority />
                     </div>
                 </div>
                 <h3 className='subheadline-small'>Aisyah As-Salafiyah, S.H.</h3>
