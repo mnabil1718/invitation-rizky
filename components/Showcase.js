@@ -25,7 +25,7 @@ export default function Showcase() {
                     <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={116} />
                 </div>
                 <h2 className="subheadline mb-4">You are invited to</h2>
-                <Image className='drop-shadow-md' src="/svg/figure.svg" alt="Muslim wedding" width={317} height={340} placeholder="blur" blurDataURL='/svg/figure.svg' priority />
+                <Image className='drop-shadow-md' src="/png/figure.png" alt="Muslim wedding" width={317} height={325.65} placeholder="blur" blurDataURL='/svg/figure.svg' priority />
                 <p className='small tracking-6'>The wedding of</p>
                 <div className="relative w-fit mx-auto">
                     <div className="z-10 absolute -top-5 -left-4">
