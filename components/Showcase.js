@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import PaperTexture from '../public/png/paper1.png'
-import TitleText from '../public/svg/title.svg'
+import TitleText from '../public/png/title-showcase.png'
 
 export default function Showcase() {
     return (
@@ -25,13 +25,13 @@ export default function Showcase() {
                     <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={116} />
                 </div>
                 <h2 className="subheadline mb-4">You are invited to</h2>
-                <Image className='drop-shadow-md' src="/png/figure.png" alt="Muslim wedding" width={317} height={325.65} placeholder="blur" blurDataURL='/svg/figure.svg' priority />
+                <Image className='drop-shadow-md' src="/png/figure.png" alt="Muslim wedding" width={317} height={325.65} placeholder="blur" blurDataURL='/png/figure.png' priority />
                 <p className='small tracking-6'>The wedding of</p>
                 <div className="relative w-fit mx-auto">
                     <div className="z-10 absolute -top-5 -left-4">
                         <Image className='drop-shadow-md' src="/png/bird3.png" alt="bird" width={50} height={50} />
                     </div>
-                    <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/svg/title.svg' />
+                    <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/png/title-showcase.png' />
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                     <div className='bg-dark h-0.25 w-12'></div>
