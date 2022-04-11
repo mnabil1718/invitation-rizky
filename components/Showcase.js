@@ -31,7 +31,7 @@ export default function Showcase() {
                     <div className="z-10 absolute -top-5 -left-4">
                         <Image className='drop-shadow-md' src="/png/bird3.png" alt="bird" width={50} height={50} />
                     </div>
-                    <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/png/title-showcase.png' />
+                    <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/webp/title-showcase.webp' />
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                     <div className='bg-dark h-0.25 w-12'></div>
