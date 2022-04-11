@@ -8,7 +8,7 @@ export default function Showcase() {
             <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <div className="absolute top-14 left-28">
-                    <Image className='drop-shadow-md' src="/svg/bird.svg" alt="bird" width={56} height={56} />
+                    <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />
                 </div>
                 <div className="absolute -top-6 left-0">
                     <Image src="/svg/birdtrail.svg" alt="Dashed line" width={169} height={117} />
@@ -19,17 +19,17 @@ export default function Showcase() {
             </div>
             <div className="max-w-screen-sm relative text-center mx-auto">
                 <div className="absolute z-10 left-0 top-14">
-                    <Image className='drop-shadow-md' src="/png/cloud.png" alt="cloud" width={98} height={98} />
+                    <Image className='drop-shadow-md' src="/png/cloud.png" alt="cloud" width={98} height={50} />
                 </div>
-                <div className="absolute z-10 -right-14 top-16 transform -scale-x-100">
-                    <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={143} />
+                <div className="absolute z-10 -right-14 top-16">
+                    <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={116} />
                 </div>
                 <h2 className="subheadline mb-4">You are invited to</h2>
                 <Image className='drop-shadow-md' src="/svg/figure.svg" alt="Muslim wedding" width={317} height={340} placeholder="blur" blurDataURL='/svg/figure.svg' priority />
                 <p className='small tracking-6'>The wedding of</p>
                 <div className="relative w-fit mx-auto">
                     <div className="z-10 absolute -top-5 -left-4">
-                        <Image className='drop-shadow-md' src="/svg/bird3.svg" alt="bird" width={50} height={50} />
+                        <Image className='drop-shadow-md' src="/png/bird3.png" alt="bird" width={50} height={50} />
                     </div>
                     <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/svg/title.svg' />
                 </div>
@@ -44,7 +44,7 @@ export default function Showcase() {
                     <Image className='drop-shadow-md' src="/png/cloud3.png" alt="cloud" width={97} height={97} />
                 </div>
                 <div className="absolute z-10 bottom-12 right-28">
-                    <Image className='drop-shadow-md' src="/svg/bird2.svg" alt="bird" width={56} height={56} />
+                    <Image className='drop-shadow-md' src="/png/bird2.png" alt="bird" width={56} height={56} />
                 </div>
                 <div className="absolute -bottom-9 right-5">
                     <Image src="/svg/birdtrail2.svg" alt="dashed line" width={121.36} height={108} />
