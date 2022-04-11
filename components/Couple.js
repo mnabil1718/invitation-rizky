@@ -16,8 +16,8 @@ export default function Couple() {
                     <div className='absolute -top-5 left-32 sm:left-48'>
                         <Image className='drop-shadow-md' src='/png/airplane2.png' alt='paper airplane' width={87} height={87} />
                     </div>
-                    <div style={{ width: "198.69px", height: "232px" }} className='transform rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame.png' alt='photo' layout='fill' objectFit='contain' placeholder="blur" blurDataURL='/png/photo-frame.png' />
+                    <div className='transform rotate-3'>
+                        <Image className='drop-shadow-md' src='/webp/photo-frame.webp' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/webp/photo-frame.webp' />
                     </div>
                 </div>
                 <h3 className='subheadline-small mb-2'>Lalu Rizky Adriansyah, S.E.</h3>
@@ -33,7 +33,7 @@ export default function Couple() {
                         <Image className='drop-shadow-md' src='/png/airplane.png' alt='paper airplane' width={87} height={87} />
                     </div>
                     <div className='transform -rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame2.png' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/png/photo-frame2.png' />
+                        <Image className='drop-shadow-md' src='/webp/photo-frame2.webp' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/webp/photo-frame2.webp' />
                     </div>
                 </div>
                 <h3 className='subheadline-small'>Aisyah As-Salafiyah, S.H.</h3>

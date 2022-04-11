@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import PaperTexture from '../public/png/paper1.png'
-import TitleText from '../public/png/title-showcase.png'
+import TitleText from '../public/webp/title-showcase.webp'
 
 export default function Showcase() {
     return (
