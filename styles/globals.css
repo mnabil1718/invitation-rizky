@@ -9,6 +9,7 @@
 @font-face {
   font-family: "Lemon";
   src: url("/fonts/LemonMelon.ttf") format("truetype");
+  font-display: swap;
 }
 
 .title {
