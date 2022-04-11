@@ -22,7 +22,7 @@ export default function Couple() {
                 </div>
                 <h3 className='subheadline-small mb-2'>Lalu Rizky Adriansyah, S.E.</h3>
                 <p className="body">Putra dari Bpk. Lalu Supardi, S.H. & Ibu Fitriani</p>
-                <div className='absolute right-10 sm:right-32'>
+                <div style={{ top: '600px' }} className='absolute right-10 sm:right-32 z-10'>
                     <Image className='drop-shadow-md' src='/png/camera.png' alt='camera' width={105} height={105} />
                 </div>
                 <div className='my-12'>

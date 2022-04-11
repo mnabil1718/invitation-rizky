@@ -19,17 +19,17 @@ export default function Closing() {
                     <Image src={Title} alt="Rizky dan Aisyah" placeholder="blur" />
                 </div>
                 <p className="body">Beserta keluarga</p>
-                <div className="absolute top-1/2 left-16">
+                <div style={{ top: '500px' }} className="absolute left-16">
                     <Image className='drop-shadow-md' src="/svg/chirp.svg" alt="chirp" width={21} height={29} />
                 </div>
-                <div className="absolute mt-2 top-1/2 left-3 transform -scale-x-100">
+                <div style={{ top: '500px' }} className="absolute mt-2 left-3 transform -scale-x-100">
                     <Image className='drop-shadow-md' src="/png/bird2.png" alt="bird" width={56} height={56} />
                 </div>
-                <div className="absolute top-2/3 right-20 transform -scale-x-100">
+                <div style={{ top: '680px' }} className="absolute right-12 transform -scale-x-100">
                     <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />
                 </div>
                 <div className='mb-14'>
-                    <Image className='drop-shadow-md' src="/png/letter.png" alt="Love letter" width={120} height={120} />
+                    <Image className='drop-shadow-md' src="/png/letter.png" alt="Love letter" width={150} height={150} />
                 </div>
                 <small className='font-work text-sm text-white opacity-50 mb-2'>Invitation created by:</small>
                 <div className='pb-24'>

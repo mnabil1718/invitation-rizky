@@ -11,7 +11,7 @@ export default function Ayat() {
     const [seconds, setSeconds] = useState(0)
 
     useEffect(() => {
-        const target = new Date('2022-04-21T08:00:00Z')
+        const target = new Date('2022-05-14T08:00:00Z')
         const interval = setInterval(() => {
             const now = new Date()
             const difference = target.getTime() - now.getTime()
