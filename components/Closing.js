@@ -16,7 +16,7 @@ export default function Closing() {
                 </p>
                 <p className="body">Kami yang berbahagia</p>
                 <div>
-                    <Image src={Title} alt="Rizky dan Aisyah" placeholder="blur" priority />
+                    <Image src={Title} alt="Rizky dan Aisyah" placeholder="blur" />
                 </div>
                 <p className="body">Beserta keluarga</p>
                 <div className="absolute top-1/2 left-16">
@@ -29,7 +29,7 @@ export default function Closing() {
                     <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />
                 </div>
                 <div className='mb-14'>
-                    <Image className='drop-shadow-md' src="/png/letter.png" alt="Love letter" width={120} height={120} priority />
+                    <Image className='drop-shadow-md' src="/png/letter.png" alt="Love letter" width={120} height={120} />
                 </div>
                 <small className='font-work text-sm text-white opacity-50 mb-2'>Invitation created by:</small>
                 <div className='pb-24'>

@@ -17,7 +17,7 @@ export default function Couple() {
                         <Image className='drop-shadow-md' src='/png/airplane2.png' alt='paper airplane' width={87} height={87} />
                     </div>
                     <div className='transform rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame.png' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/png/photo-frame.png' priority />
+                        <Image className='drop-shadow-md' src='/png/photo-frame.png' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/png/photo-frame.png' />
                     </div>
                 </div>
                 <h3 className='subheadline-small mb-2'>Lalu Rizky Adriansyah, S.E.</h3>
@@ -33,7 +33,7 @@ export default function Couple() {
                         <Image className='drop-shadow-md' src='/png/airplane.png' alt='paper airplane' width={87} height={87} />
                     </div>
                     <div className='transform -rotate-3'>
-                        <Image className='drop-shadow-md' src='/png/photo-frame2.png' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/png/photo-frame2.png' priority />
+                        <Image className='drop-shadow-md' src='/png/photo-frame2.png' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/png/photo-frame2.png' />
                     </div>
                 </div>
                 <h3 className='subheadline-small'>Aisyah As-Salafiyah, S.H.</h3>

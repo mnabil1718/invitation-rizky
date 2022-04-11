@@ -16,7 +16,7 @@ export default function Event() {
                     <Link href="#"><a target="_blank"><button className='outline-button'>Live Instagram</button></a></Link>
                 </div>
                 <div className='lg:basis-2/5 text-center'>
-                    <Image src='/png/window.png' alt='window' width={250} height={250} placeholder='blur' blurDataURL='/png/window.png' priority />
+                    <Image src='/png/window.png' alt='window' width={250} height={250} placeholder='blur' blurDataURL='/png/window.png' />
                 </div>
                 <div className='text-center lg:basis-1/5'>
                     <h1 className='title mb-5'>Walimatul Ursy</h1>
