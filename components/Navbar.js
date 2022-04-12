@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import ScrollIntoView from 'react-scroll-into-view'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

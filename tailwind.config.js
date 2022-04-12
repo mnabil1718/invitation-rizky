@@ -28,7 +28,7 @@ module.exports = {
       fontFamily: {
         lora: ["Lora", "serif"],
         alice: ["Alice", "serif"],
-        lemon: ["Lemon", "sans-serif"],
+        lemon: ["Lemon Melon", "sans-serif"],
         vazirmatn: ["Vazirmatn", "sans-serif"],
         work: ["Work Sans", "sans-serif"],
 

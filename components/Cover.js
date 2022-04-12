@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
 import NightTexture from '../public/png/night-texture.png'
 import Window from '../public/png/cover.png'
 
 
 export default function Cover({ openHandler }) {
+    const router = useRouter()
+    const { to } = router.query
+
     return (
         <motion.section exit={{ y: -1000 }} className='fixed z-40 w-full h-screen bg-dark overflow-y-hidden overflow-x-hidden'>
             <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
@@ -19,7 +22,7 @@ export default function Cover({ openHandler }) {
                     <Image src={Window} alt="flower on window" placeholder='blur' width={456} height={308} />
                 </div>
                 <p className="text-body text-neutral mb-3">Kepada Yth.</p>
-                <h2 className="font-alice text-4xl text-neutral mb-16">Lalu Rizky <br />& Keluarga</h2>
+                <h2 className="font-alice text-4xl text-neutral mb-16">{!to ? 'Tamu Undangan' : to} <br />& Keluarga</h2>
                 <div>
                     <button className='outline-button-light mb-8' onClick={() => openHandler()}>Buka Undangan</button>
                 </div>

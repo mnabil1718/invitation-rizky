@@ -1,4 +1,3 @@
-import { useState, useRef } from "react"
 import ReactHowler from "react-howler";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
