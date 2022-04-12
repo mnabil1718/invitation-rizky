@@ -8,11 +8,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import BgSound from "../public/audio/bg-sound.mp3"
 
-export default function SoundButton() {
-    const [isPlaying, setIsPlaying] = useState(false)
-    const playPauseHandler = () => {
-        setIsPlaying(!isPlaying)
-    }
+
+export default function SoundButton({ playPauseHandler, isPlaying }) {
+
 
     return (
         <div className="fixed z-30 top-5 right-5">

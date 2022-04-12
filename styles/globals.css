@@ -35,3 +35,7 @@
 .outline-button {
   @apply py-3 px-5 border border-neutral rounded-full hover:text-dark hover:bg-neutral transition ease-out duration-300;
 }
+
+.outline-button-light {
+  @apply py-3 px-5 border border-neutral rounded-full text-neutral hover:text-dark hover:bg-neutral transition ease-out duration-300;
+}
