@@ -48,7 +48,7 @@ export default function Cover({ openHandler }) {
         )
     })
     return (
-        <motion.section variants={coverVariants.bgVariants} exit='exit' className='fixed z-40 w-full h-screen bg-dark overflow-y-hidden overflow-x-hidden'>
+        <motion.section variants={coverVariants.bgVariants} exit='exit' className='fixed z-40 w-full h-screen bg-dark overflow-hidden'>
             <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
             <div className="relative z-10 max-w-screen-sm h-full mx-auto flex flex-col justify-end text-center">
                 <motion.div className='relative mx-auto w-fit h-fit mb-16'>
@@ -66,7 +66,7 @@ export default function Cover({ openHandler }) {
                 }</motion.p>
                 <motion.div variants={coverVariants.inviteVariants} initial="initial" animate="animate" className="font-alice text-4xl text-neutral mb-16">{splitInvite}<br />{splitKeluarga}</motion.div>
                 <div>
-                    <motion.button variants={coverVariants.buttonVariants} initial="initial" animate="animate" className='outline-button-light mb-8' onClick={() => openHandler()}>Buka Undangan</motion.button>
+                    <motion.button variants={coverVariants.buttonVariants} initial="initial" animate="animate" className='outline-button-light mb-20' onClick={() => openHandler()}>Buka Undangan</motion.button>
                 </div>
             </div>
         </motion.section >

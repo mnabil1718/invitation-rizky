@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import Navbar from '../components/Navbar'
 import Showcase from '../components/Showcase'
@@ -21,22 +21,27 @@ export default function Home() {
     playPauseHandler()
   }
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto'
+  }, [isOpen])
+
+
   return (
     <div className="font-lora text-dark overflow-hidden">
       <AnimatePresence exitBeforeEnter>
-        {isOpen ?
+        {isOpen &&
           (
             <Cover key="cover" openHandler={openInvitation} />
-          ) :
-          (<div key="content">
-            <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
-            <Navbar />
-            <Showcase />
-            <Ayat />
-            <Couple />
-            <Event />
-            <Closing />
-          </div>)}
+          )}
+        <>
+          <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
+          <Navbar />
+          <Showcase />
+          <Ayat />
+          <Couple />
+          <Event />
+          <Closing />
+        </>
       </AnimatePresence>
 
 

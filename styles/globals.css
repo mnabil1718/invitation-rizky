@@ -2,16 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-@import url('https://fonts.cdnfonts.com/css/lemon-melon');
+/* @import url('https://fonts.cdnfonts.com/css/lemon-melon'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
+@font-face {
   font-family: "Lemon";
   src: url("/fonts/LemonMelon.ttf") format("truetype");
   font-display: swap;
-} */
+}
 
 .title {
   @apply font-lemon text-7xl;

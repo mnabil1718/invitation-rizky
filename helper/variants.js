@@ -86,7 +86,7 @@ export const coverVariants = {
     },
     buttonVariants: {
         initial: {
-            y: 100,
+            y: 130,
         },
         animate: {
             y: 0,
