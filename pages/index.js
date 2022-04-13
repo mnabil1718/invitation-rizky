@@ -26,9 +26,7 @@ export default function Home() {
       <AnimatePresence exitBeforeEnter>
         {isOpen ?
           (
-            <div key="cover">
-              <Cover openHandler={openInvitation} />
-            </div>
+            <Cover key="cover" openHandler={openInvitation} />
           ) :
           (<div key="content">
             <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
