@@ -28,11 +28,11 @@ export default function Event() {
                         Jl. Raya Pondok Bitung, Pasir Tengah, Sukaharja, Kec. Cijeruk, Kabupaten Bogor
                     </p>
                 </div>
-
             </div>
-
-            <iframe width="600" height="450" style="border:0" loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJu29NqajPaS4RnkNYU2L1u0Q&key=AIzaSyB737Dw7OHUuvAbAtKloX8L-8TFVep3ZwI"></iframe>
-
+            <div className="relative max-w-screen-lg mx-auto p-5">
+                <h1 className="title mb-5 text-center">Lokasi Acara</h1>
+                <iframe height={500} className='relative z-10 w-full rounded-xl' style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJu29NqajPaS4RnkNYU2L1u0Q&key=AIzaSyB737Dw7OHUuvAbAtKloX8L-8TFVep3ZwI"></iframe>
+            </div>
         </section>
     )
 }

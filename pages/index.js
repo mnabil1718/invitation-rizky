@@ -23,12 +23,14 @@ export default function Home() {
 
   return (
     <div className="font-lora text-dark overflow-hidden">
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         {isOpen ?
           (
-            <Cover openHandler={openInvitation} />
+            <div key="cover">
+              <Cover openHandler={openInvitation} />
+            </div>
           ) :
-          (<>
+          (<div key="content">
             <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
             <Navbar />
             <Showcase />
@@ -36,7 +38,7 @@ export default function Home() {
             <Couple />
             <Event />
             <Closing />
-          </>)}
+          </div>)}
       </AnimatePresence>
 
 
