@@ -12,9 +12,9 @@ export default function Showcase() {
                 <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute top-14 left-28">
                     <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />
                 </motion.div>
-                <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute -top-6 left-0">
+                <div className="absolute -top-6 left-0">
                     <Image src="/svg/birdtrail.svg" alt="Dashed line" width={169} height={117} />
-                </motion.div>
+                </div>
                 <motion.div variants={showcaseVariants.ornamentRight} initial="initial" animate="animate" className="absolute right-9">
                     <Image className='drop-shadow-md' src="/png/cloud3.png" alt="cloud" width={97} height={97} />
                 </motion.div>
@@ -54,9 +54,9 @@ export default function Showcase() {
                 <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute z-10 bottom-12 right-28">
                     <Image className='drop-shadow-md' src="/png/bird2.png" alt="bird" width={56} height={56} />
                 </motion.div>
-                <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute -bottom-9 right-5">
+                <div className="absolute -bottom-9 right-5">
                     <Image src="/svg/birdtrail2.svg" alt="dashed line" width={121.36} height={108} />
-                </motion.div>
+                </div>
             </div>
         </motion.section >
     )
