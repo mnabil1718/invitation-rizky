@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { ayatVariants } from '../helper/variants'
 import PaperTexture from '../public/png/paper1.png'
 
 export default function Couple() {
