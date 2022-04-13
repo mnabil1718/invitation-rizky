@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { ayatVariants } from '../helper/variants'
 import NightScenery from '../public/png/night-scenery.png'
 import NightTexture from '../public/png/night-texture.png'
 
@@ -9,6 +11,8 @@ export default function Ayat() {
     const [hours, setHours] = useState(0)
     const [minutes, setMinutes] = useState(0)
     const [seconds, setSeconds] = useState(0)
+
+
 
     useEffect(() => {
         const target = new Date('2022-05-14T08:00:00Z')
@@ -30,43 +34,68 @@ export default function Ayat() {
     }, [])
 
 
+    const ayat = '"Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda kebesaran Allah bagi kaum yang berpikir."'
+    const splitted = ayat.split(" ").map((word, index) => {
+        var split = word.split("")
+        split.push("\u00A0")
+        return (
+            // Using wrapper span with whitespace-nowrap
+            // to prevent word break instead, overflowing 
+            // word will be pushed down
+            <span key={index} className="whitespace-nowrap">
+                {
+                    split.map((char, index) => {
+                        return (
+                            <span className='inline-block' key={index}>
+                                <motion.span className='inline-block' variants={ayatVariants.letter}>
+                                    {char}
+                                </motion.span>
+                            </span>
+                        )
+                    })
+                }
+            </span>
+        )
+    })
 
     return (
-        <section id='ayat' className="w-full relative overflow-y-hidden text-neutral">
+        <section varia className="w-full relative overflow-y-hidden text-neutral">
             <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
             <div className="max-w-screen-sm relative text-center mx-auto pt-12 pb-96 z-20">
-                <p className='body text-center px-3 mb-7'>&quot;Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda kebesaran Allah bagi kaum yang berpikir.&quot;</p>
+                <motion.div variants={ayatVariants.sentence} initial="initial" whileInView="animate" viewport={{ once: true }} className='body text-center px-3 mb-7'>
+                    {splitted}
+                </motion.div>
                 <div className="flex items-center justify-center space-x-5 mb-8">
-                    <div className='bg-neutral h-0.25 w-32'></div>
-                    <h3 className='body neutral'>Q.S Ar-Rum: 21</h3>
-                    <div className='bg-neutral h-0.25 w-32'></div>
+                    <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-32'></motion.div>
+                    <motion.h3 variants={ayatVariants.slideUp} initial="initial" whileInView="animate" viewport={{ once: true }} className='body neutral'>Q.S Ar-Rum: 21</motion.h3>
+                    <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-32'></motion.div>
                 </div>
-                <div className="mx-auto w-fit flex space-x-5 mb-5">
-                    <div>
+                <motion.div variants={ayatVariants.countParent} initial="initial" whileInView="animate" viewport={{ once: true }} className="mx-auto w-fit flex space-x-5 mb-5">
+                    <motion.div variants={ayatVariants.count}>
                         <h1 className="title">{days < 0 ? 0 : days}</h1>
                         <p className="body">Hari</p>
-                    </div>
-                    <h1 className="title">:</h1>
-                    <div>
+                    </motion.div>
+                    <motion.h1 variants={ayatVariants.count} className="title">:</motion.h1>
+                    <motion.div variants={ayatVariants.count}>
                         <h1 className="title">{hours < 0 ? 0 : hours}</h1>
                         <p className="body">Jam</p>
-                    </div>
-                    <h1 className="title">:</h1>
-                    <div>
+                    </motion.div>
+                    <motion.h1 variants={ayatVariants.count} className="title">:</motion.h1>
+                    <motion.div variants={ayatVariants.count}>
                         <h1 className="title">{minutes < 0 ? 0 : minutes}</h1>
                         <p className="body">Menit</p>
-                    </div>
-                    <h1 className="title">:</h1>
-                    <div>
+                    </motion.div>
+                    <motion.h1 variants={ayatVariants.count} className="title">:</motion.h1>
+                    <motion.div variants={ayatVariants.count}>
                         <h1 className="title">{seconds < 0 ? 0 : seconds}</h1>
                         <p className="body">detik</p>
-                    </div>
-                </div>
-                <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTVycHUxcjRtb21hZ2Nocmw0ZWVzMHNlNGsgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><button className='outline-button'>Simpan Tanggal</button></a></Link>
+                    </motion.div>
+                </motion.div>
+                <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTVycHUxcjRtb21hZ2Nocmw0ZWVzMHNlNGsgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><motion.button variants={ayatVariants.buttonVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className='outline-button'>Simpan Tanggal</motion.button></a></Link>
             </div>
-            <div className="absolute w-full bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4">
+            <motion.div variants={ayatVariants.bg} initial="initial" whileInView="animate" viewport={{ once: true }} className="absolute w-full bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4">
                 <Image src={NightScenery} alt="night scenery" layout='responsive' objectFit='cover' placeholder='blur' />
-            </div>
+            </motion.div>
         </section>
     )
 }

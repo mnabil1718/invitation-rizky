@@ -9,23 +9,23 @@ export default function Showcase() {
         <motion.section id='showcase' className='relative'>
             <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <div className="max-w-screen-sm mx-auto relative h-28">
-                <div className="absolute top-14 left-28">
+                <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute top-14 left-28">
                     <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />
-                </div>
-                <div className="absolute -top-6 left-0">
+                </motion.div>
+                <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute -top-6 left-0">
                     <Image src="/svg/birdtrail.svg" alt="Dashed line" width={169} height={117} />
-                </div>
-                <div className="absolute right-9">
+                </motion.div>
+                <motion.div variants={showcaseVariants.ornamentRight} initial="initial" animate="animate" className="absolute right-9">
                     <Image className='drop-shadow-md' src="/png/cloud3.png" alt="cloud" width={97} height={97} />
-                </div>
+                </motion.div>
             </div>
             <div className="max-w-screen-sm relative text-center mx-auto">
-                <div className="absolute z-10 left-0 top-14">
+                <motion.div variants={showcaseVariants.ornamentLeft} initial="initial" animate="animate" className="absolute z-10 left-0 top-14">
                     <Image className='drop-shadow-md' src="/png/cloud.png" alt="cloud" width={98} height={50} />
-                </div>
-                <div className="absolute z-10 -right-14 top-16">
+                </motion.div>
+                <motion.div variants={showcaseVariants.ornamentRight} initial="initial" animate="animate" className="absolute z-10 -right-14 top-16">
                     <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={116} />
-                </div>
+                </motion.div>
                 <motion.div variants={showcaseVariants.invitedVariants} initial="initial" animate="animate">
                     <motion.h2 variants={showcaseVariants.invitedChildrenVariants} className="subheadline mb-4">You are invited to</motion.h2>
                     <motion.div variants={showcaseVariants.invitedChildrenVariants}>
@@ -33,7 +33,7 @@ export default function Showcase() {
                     </motion.div>
                     <motion.p variants={showcaseVariants.invitedChildrenVariants} className='small tracking-6'>The wedding of</motion.p>
                     <div className="relative w-fit mx-auto">
-                        <motion.div variants={showcaseVariants.invitedChildrenVariants} className="z-10 absolute -top-5 -left-4">
+                        <motion.div variants={showcaseVariants.fade} className="z-10 absolute -top-5 -left-4">
                             <Image className='drop-shadow-md' src="/png/bird3.png" alt="bird" width={50} height={50} />
                         </motion.div>
                         <motion.div variants={showcaseVariants.invitedChildrenVariants}>
@@ -48,15 +48,15 @@ export default function Showcase() {
                 </motion.div>
             </div>
             <div className="max-w-screen-sm mx-auto overflow-y-clip relative h-28">
-                <div className="absolute bottom-8 -left-10">
+                <motion.div variants={showcaseVariants.ornamentLeft} initial="initial" animate="animate" className="absolute bottom-8 -left-10">
                     <Image className='drop-shadow-md' src="/png/cloud3.png" alt="cloud" width={97} height={97} />
-                </div>
-                <div className="absolute z-10 bottom-12 right-28">
+                </motion.div>
+                <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute z-10 bottom-12 right-28">
                     <Image className='drop-shadow-md' src="/png/bird2.png" alt="bird" width={56} height={56} />
-                </div>
-                <div className="absolute -bottom-9 right-5">
+                </motion.div>
+                <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute -bottom-9 right-5">
                     <Image src="/svg/birdtrail2.svg" alt="dashed line" width={121.36} height={108} />
-                </div>
+                </motion.div>
             </div>
         </motion.section >
     )

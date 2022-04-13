@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { ayatVariants } from '../helper/variants'
 import PaperTexture from '../public/png/paper1.png'
 
 export default function Couple() {
     return (
-        <section id='couple' className="w-full relative text-dark">
+        <section className="w-full relative text-dark">
             <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <div className='w-full z-10 h-48 absolute -top-24 left-0'>
                 <Image src='/svg/paper-rip.svg' alt="paper rip" layout='fill' />

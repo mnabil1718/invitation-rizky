@@ -18,7 +18,6 @@ export const coverVariants = {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 1,
                 ease: 'easeOut',
                 staggerChildren: 0.2,
             }
@@ -142,5 +141,156 @@ export const showcaseVariants = {
                 ease: 'easeOut',
             }
         }
+    },
+    ornamentRight: {
+        initial: {
+            opacity: 0,
+            x: 30,
+        },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: 0.7,
+                duration: 0.8,
+                ease: 'easeOut',
+            }
+        }
+    },
+    ornamentLeft: {
+        initial: {
+            opacity: 0,
+            x: -30,
+        },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: 0.7,
+                duration: 0.8,
+                ease: 'easeOut',
+            }
+        }
+    },
+    fade: {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delay: 1,
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
     }
+}
+
+export const ayatVariants = {
+    bg: {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 2,
+                ease: 'easeInOut',
+            }
+        }
+    },
+    slideUp: {
+        initial: {
+            opacity: 0,
+            y: 5,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 1,
+                duration: 0.3,
+                ease: 'easeOut',
+            }
+        }
+    },
+    sentence: {
+        initial: {
+            x: 0
+        },
+        animate: {
+            x: 0,
+            transition: {
+                staggerChildren: 0.005,
+            }
+        }
+    },
+    letter: {
+        initial: {
+            opacity: 0,
+            y: 5,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                ease: 'easeOut',
+            }
+        }
+    },
+    line: {
+        initial: {
+            width: 0,
+        },
+        animate: {
+            width: '128px',
+            transition: {
+                delay: 1,
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    },
+    countParent: {
+        initial: {
+            opacity: 1,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delayChildren: 1.7,
+                staggerChildren: 0.1,
+            }
+        }
+    },
+    count: {
+        initial: {
+            opacity: 0,
+            y: 15,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.7,
+                ease: 'easeOut',
+            }
+        }
+    },
+    buttonVariants: {
+        initial: {
+            opacity: 0,
+            y: 30,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.7,
+                ease: 'easeOut',
+                delay: 2,
+            }
+        }
+    },
 }
