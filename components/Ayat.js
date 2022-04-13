@@ -93,9 +93,9 @@ export default function Ayat() {
                 </motion.div>
                 <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTVycHUxcjRtb21hZ2Nocmw0ZWVzMHNlNGsgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><motion.button variants={ayatVariants.buttonVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className='outline-button'>Simpan Tanggal</motion.button></a></Link>
             </div>
-            <motion.div variants={ayatVariants.bg} initial="initial" whileInView="animate" viewport={{ once: true }} className="absolute w-full bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4">
+            <div className="absolute w-full bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4">
                 <Image src={NightScenery} alt="night scenery" layout='responsive' objectFit='cover' placeholder='blur' />
-            </motion.div>
+            </div>
         </section>
     )
 }

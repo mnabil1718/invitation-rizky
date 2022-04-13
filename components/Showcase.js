@@ -27,24 +27,24 @@ export default function Showcase() {
                     <Image className='drop-shadow-md' src="/png/cloud2.png" alt="cloud" width={143} height={116} />
                 </motion.div>
                 <motion.div variants={showcaseVariants.invitedVariants} initial="initial" animate="animate">
-                    <motion.h2 variants={showcaseVariants.invitedChildrenVariants} className="subheadline mb-4">You are invited to</motion.h2>
-                    <motion.div variants={showcaseVariants.invitedChildrenVariants}>
+                    <h2 className="subheadline mb-4">You are invited to</h2>
+                    <div>
                         <Image className='drop-shadow-md' src="/png/figure.png" alt="Muslim wedding" width={317} height={325.65} placeholder="blur" blurDataURL='/png/figure.png' priority />
-                    </motion.div>
-                    <motion.p variants={showcaseVariants.invitedChildrenVariants} className='small tracking-6'>The wedding of</motion.p>
+                    </div>
+                    <p className='small tracking-6'>The wedding of</p>
                     <div className="relative w-fit mx-auto">
                         <motion.div variants={showcaseVariants.fade} className="z-10 absolute -top-5 -left-4">
                             <Image className='drop-shadow-md' src="/png/bird3.png" alt="bird" width={50} height={50} />
                         </motion.div>
-                        <motion.div variants={showcaseVariants.invitedChildrenVariants}>
+                        <div>
                             <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/webp/title-showcase.webp' />
-                        </motion.div>
+                        </div>
                     </div>
-                    <motion.div variants={showcaseVariants.invitedChildrenVariants} className="flex items-center justify-center space-x-3">
+                    <div className="flex items-center justify-center space-x-3">
                         <div className='bg-dark h-0.25 w-12'></div>
                         <h3 className='font-alice text-xl text-dark'>Sabtu, 14 Mei 2022</h3>
                         <div className='bg-dark h-0.25 w-12'></div>
-                    </motion.div>
+                    </div>
                 </motion.div>
             </div>
             <div className="max-w-screen-sm mx-auto overflow-y-clip relative h-28">
