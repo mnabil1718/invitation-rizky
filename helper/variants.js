@@ -119,15 +119,11 @@ export const soundVariants = {
 export const showcaseVariants = {
     invitedVariants: {
         initial: {
-            opacity: 0,
-            y: 40,
+            opacity: 1,
         },
         animate: {
             opacity: 1,
-            y: 0,
             transition: {
-                duration: 0.8,
-                ease: 'easeOut',
                 staggerChildren: 0.2,
             }
         }
@@ -135,13 +131,13 @@ export const showcaseVariants = {
     invitedChildrenVariants: {
         initial: {
             opacity: 0,
-            y: 20,
+            y: 30,
         },
         animate: {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.7,
+                duration: 1,
                 ease: 'easeOut',
             }
         }
@@ -185,6 +181,19 @@ export const showcaseVariants = {
             transition: {
                 delay: 1,
                 duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    },
+    line: {
+        initial: {
+            width: 0,
+        },
+        animate: {
+            width: 56,
+            transition: {
+                delay: 1,
+                duration: 1,
                 ease: 'easeOut',
             }
         }
