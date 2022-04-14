@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { showcaseVariants } from '../helper/variants'
-import PaperTexture from '../public/png/paper1.png'
+import PaperTexture from '../public/webp/paper1.webp'
 import TitleText from '../public/webp/title-showcase.webp'
 
 export default function Showcase() {
     return (
         <section className='relative'>
-            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' priority />
+            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <div className="absolute top-14 left-28">
                     <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />

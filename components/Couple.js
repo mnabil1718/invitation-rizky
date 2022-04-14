@@ -2,12 +2,12 @@ import Image from 'next/image'
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import { coupleVariants } from '../helper/variants'
 import Parallax from './Parallax'
-import PaperTexture from '../public/png/paper1.png'
+import PaperTexture from '../public/webp/paper1.webp'
 
 export default function Couple() {
     return (
         <section className="w-full relative text-dark">
-            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' priority />
+            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <Parallax inView={[0.3, 0.4]} position={[10, -90]}>
                 <div className='w-full z-10 h-48 absolute -top-24 left-0'>
                     <Image src='/svg/paper-rip.svg' alt="paper rip" layout='fill' />

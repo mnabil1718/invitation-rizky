@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import WallTexture from '../public/png/wall-texture.png'
+import WallTexture from '../public/webp/wall-texture.webp'
 import Window from '../public/webp/window.webp'
 
 export default function Event() {
     return (
         <section id='event' className="relative text-neutral">
-            <Image src={WallTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="0% 100%" priority />
+            <Image src={WallTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="0% 100%" />
             <div className="relative max-w-screen-lg mx-auto flex flex-col px-20 lg:px-0 lg:flex-row justify-center items-center pb-24 pt-16 md:pt-28 lg:pt-36 space-x-0 space-y-10 lg:space-y-0">
                 <div className='text-center lg:basis-1/5'>
                     <h1 className='title mb-5'>Akad Nikah</h1>

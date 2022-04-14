@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Title from '../public/png/title.png'
-import PaperTexture from '../public/png/paper2.png'
+import PaperTexture from '../public/webp/paper2.webp'
 
 export default function Closing() {
     return (
         <section className="relative text-neutral">
-            <Image src={PaperTexture} alt="Paper texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="50% 0%" priority />
+            <Image src={PaperTexture} alt="Paper texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="50% 0%" />
             <div className="relative max-w-screen-sm mx-auto text-center">
                 <p dir='rtl' lang='ar' className="font-vazirmatn text-lg pt-14 mb-3">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
                 <p className="body px-2 sm:px-0">“Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta semoga Allah mempersatukan kalian berdua dalam kebaikan.”</p>
