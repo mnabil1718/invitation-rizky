@@ -60,7 +60,7 @@ export default function Ayat() {
 
     return (
         <section className="w-full relative overflow-y-hidden text-neutral">
-            <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
+            <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' priority />
             <div className="max-w-screen-sm relative text-center mx-auto pt-12 pb-96 z-20">
                 <motion.div variants={ayatVariants.sentence} initial="initial" whileInView="animate" viewport={{ once: true }} className='body text-center px-3 mb-7'>
                     {ayat}
