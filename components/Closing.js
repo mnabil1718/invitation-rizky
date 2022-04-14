@@ -7,7 +7,7 @@ export default function Closing() {
         <section className="relative text-neutral">
             <Image src={PaperTexture} alt="Paper texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="50% 0%" />
             <div className="relative max-w-screen-sm mx-auto text-center">
-                <p dir='rtl' lang='ar' className="font-vazirmatn text-lg pt-14 mb-3">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+                <p dir='rtl' lang='ar' className="font-vazirmatn text-3xl pt-14 mb-3 px-3">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ<br className='block sm:hidden' /> وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
                 <p className="body px-2 sm:px-0">“Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta semoga Allah mempersatukan kalian berdua dalam kebaikan.”</p>
                 <p className="body">(HR Abu Dawud)</p>
                 <div className="h-0.25 bg-neutral w-20 mx-auto my-5"></div>

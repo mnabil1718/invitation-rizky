@@ -55,12 +55,14 @@ export default function Cover({ openHandler }) {
             <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
             <div className="relative z-10 max-w-screen-sm h-full mx-auto flex flex-col justify-end text-center">
                 <motion.div className='relative mx-auto w-fit h-fit mb-16'>
-                    <motion.div variants={coverVariants.titleVariants} initial="initial" animate="animate" style={{ top: '55px', left: '50%', marginLeft: '-57px' }} className='flex absolute z-10 items-center space-x-1'>
+                    <motion.div variants={coverVariants.titleVariants} initial="initial" animate="animate" style={{ top: '95px', left: '50%', marginLeft: '-57px' }} className='flex absolute z-10 items-center space-x-1'>
                         <motion.h1 variants={coverVariants.titleChildrenVariants} style={{ fontSize: '132px' }} className='font-lemon text-neutral'>R</motion.h1>
                         <motion.h1 variants={coverVariants.titleChildrenVariants} style={{ fontSize: '76px' }} className='font-lemon text-neutral'>&</motion.h1>
                         <motion.h1 variants={coverVariants.titleChildrenVariants} style={{ fontSize: '132px' }} className='font-lemon text-neutral'>A</motion.h1>
                     </motion.div>
-                    <Image src={Window} alt="flower on window" placeholder='blur' width={456} height={308} />
+                    <div className='relative top-10'>
+                        <Image src={Window} alt="flower on window" placeholder='blur' width={456} height={308} />
+                    </div>
                 </motion.div>
                 <motion.p variants={coverVariants.sentence} initial="initial" animate="animate" className="text-body text-neutral mb-3">{
                     "Kepada Yth.".split("").map((singleText, index) => {

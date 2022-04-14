@@ -12,7 +12,7 @@ export default function SoundButton({ playPauseHandler, isPlaying }) {
 
 
     return (
-        <div variants={soundVariants.variants} initial="initial" animate="animate" className="fixed z-30 top-5 right-5">
+        <div className="fixed z-30 top-5 right-5">
             <ReactHowler playing={isPlaying} src={BgSound} loop />
             <button className="w-16 h-16 rounded-full bg-white/70 backdrop-blur-md drop-shadow-xl" onClick={() => playPauseHandler()}>{isPlaying ? (<FontAwesomeIcon icon={faPause} size='2x' />) : (<FontAwesomeIcon icon={faPlay} size='2x' />)}</button>
         </div>
