@@ -69,9 +69,9 @@ export default function Cover({ openHandler }) {
                         return (<motion.span variants={coverVariants.letter} key={index}>{singleText}</motion.span>)
                     })
                 }</motion.p>
-                <motion.div variants={coverVariants.inviteVariants} initial="initial" animate="animate" className="font-alice text-4xl text-neutral mb-12">{splitInvite}</motion.div>
+                <motion.div variants={coverVariants.inviteVariants} initial="initial" animate="animate" className="font-alice text-4xl text-neutral mb-14">{splitInvite}</motion.div>
                 <div>
-                    <motion.button variants={coverVariants.buttonVariants} initial="initial" animate="animate" className='outline-button-light mb-14' onClick={() => openHandler()}>Buka Undangan</motion.button>
+                    <motion.button variants={coverVariants.buttonVariants} initial="initial" animate="animate" className='outline-button-light mb-20' onClick={() => openHandler()}>Buka Undangan</motion.button>
                 </div>
             </div>
         </motion.section >
