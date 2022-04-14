@@ -63,24 +63,30 @@ export default function Ayat() {
         <section className="w-full relative overflow-y-hidden text-neutral">
             <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
             <div className="max-w-screen-sm relative text-center mx-auto pt-12 pb-96 z-20">
-                <Parallax inView={[0.1, 0.27]} position={[20, -100]}>
+                <Parallax inView={[0.1, 0.27]} position={[20, -200]}>
                     <motion.div variants={ayatVariants.sentence} initial="initial" whileInView="animate" viewport={{ once: true }} className='body text-center px-3 mb-4'>
                         <em>{splitted}</em>
                     </motion.div>
                 </Parallax>
-                <Parallax inView={[0.1, 0.27]} position={[20, -80]}>
-                    <div className="flex items-center justify-center space-x-5 mb-8">
+                <Parallax inView={[0.1, 0.27]} position={[20, -150]}>
+                    <div className="flex items-center justify-center space-x-5 mb-24">
                         <motion.h3 variants={ayatVariants.slideUp} initial="initial" whileInView="animate" viewport={{ once: true }} className='body neutral'>(Q.S. Ar-Rum: 21)</motion.h3>
                     </div>
                 </Parallax>
-                {/* <Parallax inView={[0.1, 0.27]} position={[20, -80]}>
+                <Parallax inView={[0.1, 0.27]} position={[20, -100]}>
+                    <motion.div variants={ayatVariants.sentence} initial="initial" whileInView="animate" viewport={{ once: true }} className='body text-center px-3 mb-4'>
+                        <em>Cinta bukan mengajar kita lemah, tetapi membangkitkan kekuatan.
+                            Cinta bukan mengajar kita menghinakan diri, tetapi menghembuskan kegagahan.</em>
+                    </motion.div>
+                </Parallax>
+                <Parallax inView={[0.1, 0.27]} position={[20, -50]}>
                     <div className="flex items-center justify-center space-x-5 mb-8">
                         <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-24'></motion.div>
-                        <motion.h3 variants={ayatVariants.slideUp} initial="initial" whileInView="animate" viewport={{ once: true }} className='body neutral'>Q.S. Ar-Rum: 21</motion.h3>
+                        <motion.h3 variants={ayatVariants.slideUp} initial="initial" whileInView="animate" viewport={{ once: true }} className='body neutral'>Buya Hamka</motion.h3>
                         <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-24'></motion.div>
                     </div>
-                </Parallax> */}
-                <Parallax inView={[0.1, 0.27]} position={[20, -50]}>
+                </Parallax>
+                {/* <Parallax inView={[0.1, 0.27]} position={[20, -50]}>
                     <motion.div variants={ayatVariants.countParent} initial="initial" whileInView="animate" viewport={{ once: true }} className="mx-auto w-fit flex space-x-5 mb-5">
                         <motion.div variants={ayatVariants.count}>
                             <h1 className="title">{days < 0 ? 0 : days}</h1>
@@ -102,10 +108,10 @@ export default function Ayat() {
                             <p className="body">detik</p>
                         </motion.div>
                     </motion.div>
-                </Parallax>
-                <Parallax inView={[0.1, 0.27]} position={[20, -30]}>
+                </Parallax> */}
+                {/* <Parallax inView={[0.1, 0.27]} position={[20, -30]}>
                     <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MnJkbTFhNzk3bnZlbTI2bG1waTgwbDJ1dnQgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><motion.button variants={ayatVariants.buttonVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className='outline-button'>Simpan Tanggal</motion.button></a></Link>
-                </Parallax>
+                </Parallax> */}
             </div>
             <div className="absolute w-full bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4">
                 <Parallax inView={[0.1, 0.3]} position={[100, -8]}>
