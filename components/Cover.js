@@ -2,8 +2,8 @@ import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { coverVariants } from '../helper/variants'
-import NightTexture from '../public/png/night-texture.png'
-import Window from '../public/png/cover.png'
+import NightTexture from '../public/webp/night-texture.webp'
+import Window from '../public/webp/cover.webp'
 
 export default function Cover({ openHandler }) {
     const { query, isReady } = useRouter()
@@ -12,7 +12,10 @@ export default function Cover({ openHandler }) {
     // reading query string a bit
     // So the animation would run properly
     if (!isReady) {
-        return null
+        return (
+            <section className='fixed z-40 w-full h-screen bg-dark overflow-hidden'>
+            </section>
+        )
     }
     const { to } = query
     const invite = !to ? "Tamu Undangan" : to
