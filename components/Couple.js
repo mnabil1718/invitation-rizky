@@ -23,11 +23,11 @@ export default function Couple() {
                             <Image className='drop-shadow-md' src='/webp/airplane2.webp' alt='paper airplane' width={87} height={87} />
                         </Parallax>
                     </div>
-                    <div className='transform rotate-3'>
+                    <motion.div variants={coupleVariants.fade} initial="initial" whileInView="animate" viewport={{ once: true }}>
                         <Parallax inView={[0.2, 0.5]} position={[50, -50]}>
                             <Image className='drop-shadow-md' src='/webp/photo-frame.webp' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/webp/photo-frame.webp' />
                         </Parallax>
-                    </div>
+                    </motion.div>
                 </div>
                 <motion.div variants={coupleVariants.fade} initial="initial" whileInView="animate" viewport={{ once: true }}>
                     <h3 className='subheadline-small mb-2' data-scroll data-scroll-speed="3">Lalu Rizky Adriansyah, S.E.</h3>
@@ -45,11 +45,11 @@ export default function Couple() {
                             <Image className='drop-shadow-md' src='/webp/airplane.webp' alt='paper airplane' width={87} height={87} />
                         </Parallax>
                     </div>
-                    <div className='transform -rotate-3'>
+                    <motion.div variants={coupleVariants.fade} initial="initial" whileInView="animate" viewport={{ once: true }}>
                         <Parallax inView={[0.3, 0.6]} position={[50, -50]}>
                             <Image className='drop-shadow-md' src='/webp/photo-frame2.webp' alt='photo' width={198.69} height={232} placeholder="blur" blurDataURL='/webp/photo-frame2.webp' />
                         </Parallax>
-                    </div>
+                    </motion.div>
                 </div>
                 <motion.div variants={coupleVariants.fade} initial="initial" whileInView="animate" viewport={{ once: true }}>
                     <h3 className='subheadline-small'>Aisyah As-Salafiyah, S.H.</h3>

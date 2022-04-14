@@ -348,3 +348,44 @@ export const coupleVariants = {
         },
     },
 }
+
+export const eventVariants = {
+    parent: {
+        initial: {
+            opacity: 1,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delayChildren: 1,
+                staggerChildren: 0.2,
+            }
+        },
+    },
+    children: {
+        initial: {
+            opacity: 0,
+            y: 20,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    },
+    childrenLine: {
+        initial: {
+            width: 0,
+        },
+        animate: {
+            width: 80,
+            transition: {
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    }
+}
