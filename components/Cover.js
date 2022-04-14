@@ -12,7 +12,10 @@ export default function Cover({ openHandler }) {
     // reading query string a bit
     // So the animation would run properly
     if (!isReady) {
-        return null
+        return (
+            <section className='fixed z-40 w-full h-screen bg-dark overflow-hidden'>
+            </section>
+        )
     }
     const { to } = query
     const invite = !to ? "Tamu Undangan" : to
@@ -49,7 +52,7 @@ export default function Cover({ openHandler }) {
     })
     return (
         <motion.section variants={coverVariants.bgVariants} exit='exit' className='fixed z-40 w-full h-screen bg-dark overflow-hidden'>
-            <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' priority />
+            <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
             <div className="relative z-10 max-w-screen-sm h-full mx-auto flex flex-col justify-end text-center">
                 <motion.div className='relative mx-auto w-fit h-fit mb-16'>
                     <motion.div variants={coverVariants.titleVariants} initial="initial" animate="animate" style={{ top: '55px', left: '50%', marginLeft: '-57px' }} className='flex absolute z-10 items-center space-x-1'>

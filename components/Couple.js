@@ -29,10 +29,10 @@ export default function Couple() {
                         </Parallax>
                     </div>
                 </div>
-                <div data-scroll-section>
+                <motion.div variants={coupleVariants.fade} initial="initial" whileInView="animate" viewport={{ once: true }}>
                     <h3 className='subheadline-small mb-2' data-scroll data-scroll-speed="3">Lalu Rizky Adriansyah, S.E.</h3>
-                </div>
-                <p className="body">Putra dari Bpk. Lalu Supardi, S.H. & Ibu Fitriani</p>
+                    <p className="body">Putra dari Bpk. Lalu Supardi, S.H. & Ibu Fitriani</p>
+                </motion.div>
                 <div style={{ top: '600px' }} className='absolute right-10 sm:right-32 z-10'>
                     <Parallax inView={[0.2, 0.5]} position={[150, -150]}>
                         <Image className='drop-shadow-md' src='/webp/camera.webp' alt='camera' width={105} height={105} />
@@ -53,8 +53,10 @@ export default function Couple() {
                         </Parallax>
                     </div>
                 </div>
-                <h3 className='subheadline-small'>Aisyah As-Salafiyah, S.H.</h3>
-                <p className="body">Putri dari Bpk. Dr. Abdurrahman Misno B. P. & Ibu Mulyani</p>
+                <motion.div variants={coupleVariants.fade} initial="initial" whileInView="animate" viewport={{ once: true }}>
+                    <h3 className='subheadline-small'>Aisyah As-Salafiyah, S.H.</h3>
+                    <p className="body">Putri dari Bpk. Dr. Abdurrahman Misno B. P. & Ibu Mulyani</p>
+                </motion.div>
                 <div className="relative -left-36 sm:-left-52 -top-4">
                     <Parallax inView={[0.4, 0.7]} position={[30, -30]}>
                         <Image className='drop-shadow-md' src='/webp/book.webp' alt='book' width={175} height={175} />
