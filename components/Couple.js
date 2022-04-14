@@ -20,7 +20,7 @@ export default function Couple() {
                 <div className="relative pt-20 mb-7">
                     <div className='absolute z-40 -top-5 left-32 sm:left-48'>
                         <Parallax inView={[0.2, 0.5]} position={[100, -100]}>
-                            <Image className='drop-shadow-md' src='/png/airplane2.png' alt='paper airplane' width={87} height={87} />
+                            <Image className='drop-shadow-md' src='/webp/airplane2.webp' alt='paper airplane' width={87} height={87} />
                         </Parallax>
                     </div>
                     <div className='transform rotate-3'>
@@ -35,7 +35,7 @@ export default function Couple() {
                 <p className="body">Putra dari Bpk. Lalu Supardi, S.H. & Ibu Fitriani</p>
                 <div style={{ top: '600px' }} className='absolute right-10 sm:right-32 z-10'>
                     <Parallax inView={[0.2, 0.5]} position={[150, -150]}>
-                        <Image className='drop-shadow-md' src='/png/camera.png' alt='camera' width={105} height={105} />
+                        <Image className='drop-shadow-md' src='/webp/camera.webp' alt='camera' width={105} height={105} />
                     </Parallax>
                 </div>
                 <motion.div initial={{ pathLength: 0 }} whileInView={{ pathLength: 100 }} className='my-12'>
@@ -44,7 +44,7 @@ export default function Couple() {
                 <div className="relative mb-7">
                     <div className='absolute z-10 top-32 right-10 sm:right-44'>
                         <Parallax inView={[0.3, 0.6]} position={[100, -100]}>
-                            <Image className='drop-shadow-md' src='/png/airplane.png' alt='paper airplane' width={87} height={87} />
+                            <Image className='drop-shadow-md' src='/webp/airplane.webp' alt='paper airplane' width={87} height={87} />
                         </Parallax>
                     </div>
                     <div className='transform -rotate-3'>
@@ -57,7 +57,7 @@ export default function Couple() {
                 <p className="body">Putri dari Bpk. Dr. Abdurrahman Misno B. P. & Ibu Mulyani</p>
                 <div className="relative -left-36 sm:-left-52 -top-4">
                     <Parallax inView={[0.4, 0.7]} position={[30, -30]}>
-                        <Image className='drop-shadow-md' src='/png/book.png' alt='book' width={175} height={175} />
+                        <Image className='drop-shadow-md' src='/webp/book.webp' alt='book' width={175} height={175} />
                     </Parallax>
                 </div>
             </div>

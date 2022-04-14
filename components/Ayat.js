@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ayatVariants } from '../helper/variants'
-import NightScenery from '../public/png/night-scenery.png'
+import NightScenery from '../public/webp/night-scenery.webp'
 import NightTexture from '../public/webp/night-texture.webp'
 
 export default function Ayat() {
