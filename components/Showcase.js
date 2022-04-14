@@ -21,25 +21,25 @@ export default function Showcase() {
             </div>
             <div className="max-w-screen-sm relative text-center mx-auto">
                 <motion.div variants={showcaseVariants.ornamentLeft} initial="initial" whileInView="animate" viewport={{ once: true }} className="absolute z-10 left-0 top-14">
-                    <Parallax inView={[0, 0.07]} position={[0, -60]}>
+                    <Parallax inView={[0, 0.07]} position={[0, -100]}>
                         <Image className='drop-shadow-md' src="/webp/cloud.webp" alt="cloud" width={98} height={50} />
                     </Parallax>
                 </motion.div>
                 <motion.div variants={showcaseVariants.ornamentRight} initial="initial" whileInView="animate" viewport={{ once: true }} className="absolute z-10 -right-14 top-16">
-                    <Parallax inView={[0, 0.07]} position={[30, -130]}>
+                    <Parallax inView={[0, 0.07]} position={[30, -160]}>
                         <Image className='drop-shadow-md' src="/webp/cloud2.webp" alt="cloud" width={143} height={116} />
                     </Parallax>
                 </motion.div>
                 <motion.div variants={showcaseVariants.invitedVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
-                    <Parallax inView={[0, 0.07]} position={[0, -150]}>
+                    <Parallax inView={[0, 0.07]} position={[0, -200]}>
                         <motion.h2 variants={showcaseVariants.invitedChildrenVariants} className="subheadline mb-4">You are invited to</motion.h2>
                     </Parallax>
                     <motion.div variants={showcaseVariants.invitedChildrenVariants}>
-                        <Parallax inView={[0, 0.07]} position={[0, -120]}>
+                        <Parallax inView={[0, 0.07]} position={[0, -150]}>
                             <Image className='drop-shadow-md' src="/webp/figure.webp" alt="Muslim wedding" width={317} height={325.65} placeholder="blur" blurDataURL='/webp/figure.webp' priority />
                         </Parallax>
                     </motion.div>
-                    <Parallax inView={[0, 0.07]} position={[0, -60]}>
+                    <Parallax inView={[0, 0.07]} position={[0, -100]}>
                         <motion.p variants={showcaseVariants.invitedChildrenVariants} className='small tracking-6'>The wedding of</motion.p>
                         <div className="relative w-fit mx-auto">
                             <div className="z-10 absolute -top-7 -left-4">
