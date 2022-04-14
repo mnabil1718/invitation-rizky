@@ -6,8 +6,8 @@ import TitleText from '../public/webp/title-showcase.webp'
 
 export default function Showcase() {
     return (
-        <motion.section id='showcase' className='relative'>
-            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
+        <motion.section style={{ backgroundImage: 'url("/png/paper1.png")', objectFit: 'cover' }} className='relative'>
+            {/* <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' /> */}
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <motion.div variants={showcaseVariants.fade} initial="initial" animate="animate" className="absolute top-14 left-28">
                     <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />
