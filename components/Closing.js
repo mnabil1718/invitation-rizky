@@ -15,10 +15,10 @@ export default function Closing() {
                     <br /><em>Jazakumullaahu Khayran</em>
                 </p>
                 <p className="body">Kami yang berbahagia</p>
+                <p className="body">Keluarga Besar dari</p>
                 <div>
                     <Image src={Title} alt="Rizky dan Aisyah" placeholder="blur" />
                 </div>
-                <p className="body">Beserta keluarga</p>
                 <div style={{ top: '500px' }} className="absolute left-16">
                     <Image className='drop-shadow-md' src="/svg/chirp.svg" alt="chirp" width={21} height={29} />
                 </div>

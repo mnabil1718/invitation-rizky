@@ -19,7 +19,7 @@ export default function Navbar() {
                     <li><ScrollIntoView selector='#showcase'><a className={`flex flex-col justify-center space-y-1 cursor-pointer ${router.pathname.startsWith('/#showcase') && 'text-blue'}`}><FontAwesomeIcon icon={faHouse} size='2x' /><small className="small">Beranda</small></a></ScrollIntoView></li>
                     <li><ScrollIntoView selector='#couple'><a className={`flex flex-col justify-center space-y-1 cursor-pointer ${router.pathname.startsWith('/#couple') && 'text-blue'}`}><FontAwesomeIcon icon={faRing} size='2x' /><small className="small">Mempelai</small></a></ScrollIntoView></li>
                     <li><ScrollIntoView selector='#event'><a className={`flex flex-col justify-center space-y-1 cursor-pointer ${router.pathname.startsWith('/#event') && 'text-blue'}`}><FontAwesomeIcon icon={faCalendar} size='2x' /><small className="small">Acara</small></a></ScrollIntoView></li>
-                    <li><ScrollIntoView selector='#closing'><a className={`flex flex-col justify-center space-y-1 cursor-pointer ${router.pathname.startsWith('/#closing') && 'text-blue'}`}><FontAwesomeIcon icon={faLocationDot} size='2x' /><small className="small">Lokasi</small></a></ScrollIntoView></li>
+                    <li><ScrollIntoView selector='#location'><a className={`flex flex-col justify-center space-y-1 cursor-pointer ${router.pathname.startsWith('/#closing') && 'text-blue'}`}><FontAwesomeIcon icon={faLocationDot} size='2x' /><small className="small">Lokasi</small></a></ScrollIntoView></li>
                 </ul>
             </nav>
         </header>

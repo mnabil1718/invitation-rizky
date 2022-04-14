@@ -99,7 +99,7 @@ export default function Ayat() {
                     </motion.div>
                 </Parallax>
                 <Parallax inView={[0.1, 0.27]} position={[20, -30]}>
-                    <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTVycHUxcjRtb21hZ2Nocmw0ZWVzMHNlNGsgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><motion.button variants={ayatVariants.buttonVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className='outline-button'>Simpan Tanggal</motion.button></a></Link>
+                    <Link href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MnJkbTFhNzk3bnZlbTI2bG1waTgwbDJ1dnQgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com"><a target="_blank"><motion.button variants={ayatVariants.buttonVariants} initial="initial" whileInView="animate" viewport={{ once: true }} className='outline-button'>Simpan Tanggal</motion.button></a></Link>
                 </Parallax>
             </div>
             <div className="absolute w-full bottom-0 sm:-bottom-32 md:-bottom-64 lg:-bottom-96 xl:-bottom-3/4">

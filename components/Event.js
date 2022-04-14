@@ -30,7 +30,7 @@ export default function Event() {
                     </p>
                 </div>
             </div>
-            <div className="relative max-w-screen-lg mx-auto p-5">
+            <div id='location' className="relative max-w-screen-lg mx-auto p-5">
                 <h1 className="title mb-5 text-center">Lokasi Acara</h1>
                 <iframe height={500} className='relative z-10 w-full rounded-xl' style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=8QQ8%2BR6P%20AmmA%20AlamiA%2C%20Sukaharja%2C%20Cijeruk%2C%20Bogor%20Regency%2C%20West%20Java%2016740&key=AIzaSyB737Dw7OHUuvAbAtKloX8L-8TFVep3ZwI"></iframe>
             </div>

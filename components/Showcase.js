@@ -7,7 +7,7 @@ import TitleText from '../public/webp/title-showcase.webp'
 
 export default function Showcase() {
     return (
-        <section className='relative'>
+        <section id='showcase' className='relative'>
             <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <div className="absolute top-14 left-28">
