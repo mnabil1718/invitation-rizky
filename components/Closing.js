@@ -25,7 +25,7 @@ export default function Closing() {
                 <div style={{ top: '500px' }} className="absolute mt-2 left-3 transform -scale-x-100">
                     <Image className='drop-shadow-md' src="/webp/bird2.webp" alt="bird" width={56} height={56} />
                 </div>
-                <div style={{ top: '680px' }} className="absolute right-12 transform -scale-x-100">
+                <div style={{ top: '780px' }} className="absolute right-12 transform -scale-x-100">
                     <Image className='drop-shadow-md' src="/webp/bird.webp" alt="bird" width={56} height={56} />
                 </div>
                 <div className='mb-14'>

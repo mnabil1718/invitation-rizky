@@ -65,7 +65,7 @@ export default function Cover({ openHandler }) {
                     </div>
                 </motion.div>
                 <motion.p variants={coverVariants.sentence} initial="initial" animate="animate" className="text-body text-neutral mb-3">{
-                    "Kepada Yth.".split("").map((singleText, index) => {
+                    "Yth.".split("").map((singleText, index) => {
                         return (<motion.span variants={coverVariants.letter} key={index}>{singleText}</motion.span>)
                     })
                 }</motion.p>

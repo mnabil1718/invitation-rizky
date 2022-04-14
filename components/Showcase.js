@@ -35,9 +35,11 @@ export default function Showcase() {
                     <Parallax inView={[0, 0.07]} position={[0, -150]}>
                         <h2 className="subheadline mb-4">You are invited to</h2>
                     </Parallax>
-                    <Parallax inView={[0, 0.07]} position={[0, -120]}>
-                        <Image className='drop-shadow-md' src="/webp/figure.webp" alt="Muslim wedding" width={317} height={325.65} placeholder="blur" blurDataURL='/webp/figure.webp' priority />
-                    </Parallax>
+                    <motion.div variants={showcaseVariants.invitedVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
+                        <Parallax inView={[0, 0.07]} position={[0, -120]}>
+                            <Image className='drop-shadow-md' src="/webp/figure.webp" alt="Muslim wedding" width={317} height={325.65} placeholder="blur" blurDataURL='/webp/figure.webp' priority />
+                        </Parallax>
+                    </motion.div>
                     <Parallax inView={[0, 0.07]} position={[0, -60]}>
                         <p className='small tracking-6'>The wedding of</p>
                         <div className="relative w-fit mx-auto">

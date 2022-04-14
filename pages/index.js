@@ -29,19 +29,20 @@ export default function Home() {
   return (
     <main className="font-lora text-dark overflow-hidden">
       <AnimatePresence>
-        {isOpen &&
+        {isOpen ?
           (
             <Cover key="cover" openHandler={openInvitation} />
-          )}
-        <>
-          <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
-          <Navbar />
-          <Showcase />
-          <Ayat />
-          <Couple />
-          <Event />
-          <Closing />
-        </>
+          ) :
+          (<div key="cover">
+            <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
+            <Navbar />
+            <Showcase />
+            <Ayat />
+            <Couple />
+            <Event />
+            <Closing />
+          </div>)
+        }
       </AnimatePresence>
     </main>
 

@@ -119,11 +119,15 @@ export const soundVariants = {
 export const showcaseVariants = {
     invitedVariants: {
         initial: {
-            opacity: 1,
+            opacity: 0,
+            y: 40,
         },
         animate: {
             opacity: 1,
+            y: 0,
             transition: {
+                duration: 0.8,
+                ease: 'easeOut',
                 staggerChildren: 0.2,
             }
         }

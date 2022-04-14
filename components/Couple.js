@@ -33,7 +33,7 @@ export default function Couple() {
                     <h3 className='subheadline-small mb-2' data-scroll data-scroll-speed="3">Lalu Rizky Adriansyah, S.E.</h3>
                     <p className="body">Putra dari Bpk. Lalu Supardi, S.H. & Ibu Fitriani</p>
                 </motion.div>
-                <motion.div whileInView={{ rotate: 45 }} transition={{ duration: 0.5, delay: 0.5 }} style={{ top: '600px' }} className='absolute right-10 sm:right-32 z-10'>
+                <motion.div whileInView={{ rotate: 45 }} transition={{ duration: 0.5, delay: 0.5 }} style={{ top: '630px' }} className='absolute right-10 sm:right-32 z-10'>
                     <Image className='drop-shadow-md' src='/webp/camera.webp' alt='camera' width={105} height={105} />
                 </motion.div>
                 <motion.div initial={{ pathLength: 0 }} whileInView={{ pathLength: 100 }} className='my-12'>
