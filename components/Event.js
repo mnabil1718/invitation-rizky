@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import WallTexture from '../public/png/wall-texture.png'
+import WallTexture from '../public/webp/wall-texture.webp'
 import Window from '../public/webp/window.webp'
 
 export default function Event() {

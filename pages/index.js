@@ -27,25 +27,23 @@ export default function Home() {
 
 
   return (
-    <div className="font-lora text-dark overflow-hidden">
-      <AnimatePresence exitBeforeEnter>
-        {isOpen ?
+    <main className="font-lora text-dark overflow-hidden">
+      <AnimatePresence>
+        {isOpen &&
           (
             <Cover key="cover" openHandler={openInvitation} />
-          ) :
-          (<div key='content'>
-            <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
-            <Navbar />
-            <Showcase />
-            <Ayat />
-            <Couple />
-            <Event />
-            <Closing />
-          </div>)}
+          )}
+        <>
+          <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
+          <Navbar />
+          <Showcase />
+          <Ayat />
+          <Couple />
+          <Event />
+          <Closing />
+        </>
       </AnimatePresence>
-
-
-    </div>
+    </main>
 
   )
 }

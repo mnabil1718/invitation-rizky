@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import Title from '../public/png/title.png'
-import PaperTexture from '../public/png/paper2.png'
+import Title from '../public/webp/title.webp'
+import PaperTexture from '../public/webp/paper2.webp'
 
 export default function Closing() {
     return (
-        <section id='closing' className="relative text-neutral">
+        <section className="relative text-neutral">
             <Image src={PaperTexture} alt="Paper texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="50% 0%" />
             <div className="relative max-w-screen-sm mx-auto text-center">
                 <p dir='rtl' lang='ar' className="font-vazirmatn text-lg pt-14 mb-3">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
@@ -23,13 +23,13 @@ export default function Closing() {
                     <Image className='drop-shadow-md' src="/svg/chirp.svg" alt="chirp" width={21} height={29} />
                 </div>
                 <div style={{ top: '500px' }} className="absolute mt-2 left-3 transform -scale-x-100">
-                    <Image className='drop-shadow-md' src="/png/bird2.png" alt="bird" width={56} height={56} />
+                    <Image className='drop-shadow-md' src="/webp/bird2.webp" alt="bird" width={56} height={56} />
                 </div>
                 <div style={{ top: '680px' }} className="absolute right-12 transform -scale-x-100">
-                    <Image className='drop-shadow-md' src="/png/bird.png" alt="bird" width={56} height={56} />
+                    <Image className='drop-shadow-md' src="/webp/bird.webp" alt="bird" width={56} height={56} />
                 </div>
                 <div className='mb-14'>
-                    <Image className='drop-shadow-md' src="/png/letter.png" alt="Love letter" width={150} height={150} />
+                    <Image className='drop-shadow-md' src="/webp/letter.webp" alt="Love letter" width={150} height={150} />
                 </div>
                 <small className='font-work text-sm text-white opacity-50 mb-2'>Invitation created by:</small>
                 <div className='pb-24'>
