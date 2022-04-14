@@ -33,11 +33,11 @@ export default function Showcase() {
                     </div>
                     <p className='small tracking-6'>The wedding of</p>
                     <div className="relative w-fit mx-auto">
-                        <div className="z-10 absolute -top-5 -left-4">
+                        <div className="z-10 absolute -top-7 -left-4">
                             <Image className='drop-shadow-md' src="/webp/bird3.webp" alt="bird" width={50} height={50} />
                         </div>
                         <div>
-                            <Image src={TitleText} alt="Rizky dan Aisyah" placeholder='blur' blurDataURL='/webp/title-showcase.webp' />
+                            <h1 className='title mt-2'>Rizky & Aisyah</h1>
                         </div>
                     </div>
                     <div className="flex items-center justify-center space-x-3">

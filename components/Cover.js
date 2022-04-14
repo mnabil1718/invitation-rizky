@@ -2,8 +2,8 @@ import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { coverVariants } from '../helper/variants'
-import NightTexture from '../public/png/night-texture.png'
-import Window from '../public/png/cover.png'
+import NightTexture from '../public/webp/night-texture.webp'
+import Window from '../public/webp/cover.webp'
 
 export default function Cover({ openHandler }) {
     const { query, isReady } = useRouter()
