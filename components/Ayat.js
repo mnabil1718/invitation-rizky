@@ -81,9 +81,9 @@ export default function Ayat() {
                 </Parallax>
                 <Parallax inView={[0.1, 0.27]} position={[20, -50]}>
                     <div className="flex items-center justify-center space-x-5 mb-8">
-                        <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-16'></motion.div>
+                        <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-10'></motion.div>
                         <motion.h3 variants={ayatVariants.slideUp} initial="initial" whileInView="animate" viewport={{ once: true }} className='body neutral'>Buya Hamka</motion.h3>
-                        <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-16'></motion.div>
+                        <motion.div variants={ayatVariants.line} initial="initial" whileInView="animate" viewport={{ once: true }} className='bg-neutral h-0.25 w-10'></motion.div>
                     </div>
                 </Parallax>
                 {/* <Parallax inView={[0.1, 0.27]} position={[20, -50]}>
