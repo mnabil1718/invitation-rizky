@@ -41,15 +41,15 @@ export default function Cover({ openHandler }) {
             </span>
         )
     })
-    const splitKeluarga = "& Keluarga".replace(/\s/g, "\u00A0").split("").map((char, index) => {
-        return (
-            <span className='inline-block overflow-hidden' key={index}>
-                <motion.span className='inline-block' variants={coverVariants.inviteChildrenVariants}>
-                    {char}
-                </motion.span>
-            </span>
-        )
-    })
+    // const splitKeluarga = "& Keluarga".replace(/\s/g, "\u00A0").split("").map((char, index) => {
+    //     return (
+    //         <span className='inline-block overflow-hidden' key={index}>
+    //             <motion.span className='inline-block' variants={coverVariants.inviteChildrenVariants}>
+    //                 {char}
+    //             </motion.span>
+    //         </span>
+    //     )
+    // })
     return (
         <motion.section variants={coverVariants.bgVariants} exit='exit' className='fixed z-40 w-full h-screen bg-dark overflow-hidden'>
             <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
@@ -69,9 +69,9 @@ export default function Cover({ openHandler }) {
                         return (<motion.span variants={coverVariants.letter} key={index}>{singleText}</motion.span>)
                     })
                 }</motion.p>
-                <motion.div variants={coverVariants.inviteVariants} initial="initial" animate="animate" className="font-alice text-4xl text-neutral mb-16">{splitInvite}<br />{splitKeluarga}</motion.div>
+                <motion.div variants={coverVariants.inviteVariants} initial="initial" animate="animate" className="font-alice text-4xl text-neutral mb-12">{splitInvite}</motion.div>
                 <div>
-                    <motion.button variants={coverVariants.buttonVariants} initial="initial" animate="animate" className='outline-button-light mb-20' onClick={() => openHandler()}>Buka Undangan</motion.button>
+                    <motion.button variants={coverVariants.buttonVariants} initial="initial" animate="animate" className='outline-button-light mb-14' onClick={() => openHandler()}>Buka Undangan</motion.button>
                 </div>
             </div>
         </motion.section >
