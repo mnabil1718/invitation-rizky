@@ -273,7 +273,7 @@ export const ayatVariants = {
         animate: {
             opacity: 1,
             transition: {
-                delayChildren: 1.7,
+                delayChildren: 1,
                 staggerChildren: 0.1,
             }
         }
@@ -385,6 +385,180 @@ export const eventVariants = {
             transition: {
                 duration: 0.5,
                 ease: 'easeOut',
+            }
+        }
+    },
+    slideParent: {
+        initial: {
+            x: 1
+        },
+        animate: {
+            x: 1,
+            transition: {
+                delayChildren: 0.7,
+                staggerChildren: 0.2,
+            }
+        }
+    },
+    slideRight: {
+        initial: {
+            opacity: 0,
+            x: -70,
+        },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    },
+    slideLeft: {
+        initial: {
+            opacity: 0,
+            x: 70,
+        },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    },
+    sentence: {
+        initial: {
+            x: 1
+        },
+        animate: {
+            x: 1,
+            transition: {
+                staggerChildren: 0.1,
+            }
+        }
+    },
+    letter: {
+        initial: {
+            y: 70,
+        },
+        animate: {
+            y: 0,
+            transition: {
+                ease: 'easeOut',
+            }
+        }
+    },
+
+}
+
+export const closingVariants = {
+    fadeLong: {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delay: 2,
+                duration: 2,
+                ease: 'easeOut',
+            }
+        }
+    },
+    parentFade: {
+        initial: {
+            opacity: 1,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delayChildren: 1,
+                staggerChildren: 0.4,
+            }
+        }
+    },
+    fade: {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                duration: 1,
+                ease: 'easeOut',
+            }
+        }
+    },
+    parent: {
+        initial: {
+            opacity: 1,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delayChildren: 1,
+                staggerChildren: 0.3,
+            }
+        }
+    },
+    child: {
+        initial: {
+            opacity: 0,
+            y: 20,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    },
+    line: {
+        initial: {
+            width: 0,
+        },
+        animate: {
+            width: 80,
+            transition: {
+                duration: 0.5,
+                ease: 'easeOut',
+            }
+        }
+    },
+    wiggle: {
+        animate: {
+            scale: [1, 1.2, 1.2, 1.2, 1.2, 1],
+            rotate: [0, 15, -15, 15, -15, 0],
+            transition: {
+                repeat: Infinity,
+                repeatType: 'loop',
+                repeatDelay: 2
+            }
+        }
+    },
+    wiggle2: {
+        animate: {
+            scale: [1, 1.2, 1.2, 1.2, 1.2, 1],
+            rotate: [0, 15, -15, 15, -15, 0],
+            transition: {
+                repeat: Infinity,
+                repeatType: 'loop',
+                repeatDelay: 2.5
+            }
+        }
+    },
+    wiggle3: {
+        animate: {
+            scale: [1, 1.2, 1.2, 1.2, 1.2, 1],
+            rotate: [0, 15, -15, 15, -15, 0],
+            transition: {
+                repeat: Infinity,
+                repeatType: 'loop',
+                repeatDelay: 1.7
             }
         }
     }
