@@ -66,21 +66,17 @@ export default function Event() {
                 </motion.div>
             </div>
             <div id='location' className="relative max-w-screen-xl mx-auto p-5">
-                <Parallax inView={[0.6, 0.8]} position={[600, 0]}>
-                    <motion.h1 variants={eventVariants.sentence} initial="initial" whileInView="animate" viewport={{ once: true }} className="title mb-5 text-center">{lokasi}</motion.h1>
-                </Parallax>
-                <Parallax inView={[0.6, 0.8]} position={[1000, 0]}>
-                    <div className='flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-8'>
-                        <motion.div variants={eventVariants.slideParent} initial="initial" whileInView="animate" viewport={{ once: true }} className="flex flex-col w-full items-center">
-                            <motion.p variants={eventVariants.slideRight} className="subheadline mb-3">Lombok</motion.p>
-                            <motion.iframe variants={eventVariants.slideRight} height={480} className='relative z-10 w-full rounded-xl' style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=-8.568107%2C%20116.109150&key=AIzaSyB737Dw7OHUuvAbAtKloX8L-8TFVep3ZwI"></motion.iframe>
-                        </motion.div>
-                        <motion.div variants={eventVariants.slideParent} initial="initial" whileInView="animate" viewport={{ once: true }} className="flex flex-col w-full items-center">
-                            <motion.p variants={eventVariants.slideLeft} className="subheadline mb-3">Bogor</motion.p>
-                            <motion.iframe variants={eventVariants.slideLeft} height={480} className='relative z-10 w-full rounded-xl' style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=8QQ8%2BR6P%20AmmA%20AlamiA%2C%20Sukaharja%2C%20Cijeruk%2C%20Bogor%20Regency%2C%20West%20Java%2016740&key=AIzaSyB737Dw7OHUuvAbAtKloX8L-8TFVep3ZwI"></motion.iframe>
-                        </motion.div>
-                    </div>
-                </Parallax>
+                <motion.h1 variants={eventVariants.sentence} initial="initial" whileInView="animate" viewport={{ once: true }} className="title mb-5 text-center">{lokasi}</motion.h1>
+                <div className='flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-8'>
+                    <motion.div variants={eventVariants.slideParent} initial="initial" whileInView="animate" viewport={{ once: true }} className="flex flex-col w-full items-center">
+                        <motion.p variants={eventVariants.slideRight} className="subheadline mb-3">Lombok</motion.p>
+                        <motion.iframe variants={eventVariants.slideRight} height={480} className='relative z-10 w-full rounded-xl' style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=-8.568107%2C%20116.109150&key=AIzaSyB737Dw7OHUuvAbAtKloX8L-8TFVep3ZwI"></motion.iframe>
+                    </motion.div>
+                    <motion.div variants={eventVariants.slideParent} initial="initial" whileInView="animate" viewport={{ once: true }} className="flex flex-col w-full items-center">
+                        <motion.p variants={eventVariants.slideLeft} className="subheadline mb-3">Bogor</motion.p>
+                        <motion.iframe variants={eventVariants.slideLeft} height={480} className='relative z-10 w-full rounded-xl' style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=8QQ8%2BR6P%20AmmA%20AlamiA%2C%20Sukaharja%2C%20Cijeruk%2C%20Bogor%20Regency%2C%20West%20Java%2016740&key=AIzaSyB737Dw7OHUuvAbAtKloX8L-8TFVep3ZwI"></motion.iframe>
+                    </motion.div>
+                </div>
             </div>
         </section>
     )
