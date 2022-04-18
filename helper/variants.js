@@ -151,7 +151,7 @@ export const showcaseVariants = {
             opacity: 1,
             x: 0,
             transition: {
-                delay: 0.7,
+                delay: 1.2,
                 duration: 0.8,
                 ease: 'easeOut',
             }
@@ -166,7 +166,7 @@ export const showcaseVariants = {
             opacity: 1,
             x: 0,
             transition: {
-                delay: 0.7,
+                delay: 1.2,
                 duration: 0.8,
                 ease: 'easeOut',
             }
