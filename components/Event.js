@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { eventVariants, ayatVariants, coverVariants } from '../helper/variants'
 import Parallax from './Parallax'
 import Countdown from './Countdown'
-import WallTexture from '../public/webp/wall-texture.webp'
+// import WallTexture from '../public/webp/wall-texture.webp'
 import Window from '../public/webp/window.webp'
 
 export default function Event() {

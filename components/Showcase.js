@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { showcaseVariants, closingVariants } from '../helper/variants'
-import PaperTexture from '../public/webp/paper1.webp'
+// import PaperTexture from '../public/webp/paper1.webp'
 
 export default function Showcase() {
     return (

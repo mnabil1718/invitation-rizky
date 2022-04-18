@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import { coupleVariants } from '../helper/variants'
 import Parallax from './Parallax'
-import PaperTexture from '../public/webp/paper1.webp'
+// import PaperTexture from '../public/webp/paper1.webp'
 
 export default function Couple() {
     return (

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { closingVariants } from '../helper/variants'
 import Parallax from './Parallax'
 import Title from '../public/webp/title.webp'
-import PaperTexture from '../public/webp/paper2.webp'
+// import PaperTexture from '../public/webp/paper2.webp'
 
 export default function Closing() {
     return (

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Parallax from './Parallax'
 import { ayatVariants } from '../helper/variants'
 import NightScenery from '../public/webp/night-scenery.webp'
-import NightTexture from '../public/webp/night-texture.webp'
+// import NightTexture from '../public/webp/night-texture.webp'
 
 export default function Ayat() {
     const ayat = '"Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda kebesaran Allah bagi kaum yang berpikir."'

@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { coverVariants } from '../helper/variants'
-import NightTexture from '../public/webp/night-texture.webp'
+// import NightTexture from '../public/webp/night-texture.webp'
 // import Window from '../public/webp/cover.webp'
 import Window from '../public/webp/cover2.webp'
 
