@@ -3,7 +3,8 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { coverVariants } from '../helper/variants'
 import NightTexture from '../public/webp/night-texture.webp'
-import Window from '../public/webp/cover.webp'
+// import Window from '../public/webp/cover.webp'
+import Window from '../public/webp/cover2.webp'
 
 export default function Cover({ openHandler }) {
     const { query, isReady } = useRouter()
@@ -61,7 +62,7 @@ export default function Cover({ openHandler }) {
                         <motion.h1 variants={coverVariants.titleChildrenVariants} style={{ fontSize: '132px' }} className='font-lemon text-neutral'>A</motion.h1>
                     </motion.div>
                     <div className='relative top-10'>
-                        <Image src={Window} alt="flower on window" placeholder='blur' width={456} height={308} priority />
+                        <Image src={Window} alt="flower on window" placeholder='blur' width={212.8} height={308} priority />
                     </div>
                 </motion.div>
                 <motion.p variants={coverVariants.sentence} initial="initial" animate="animate" className="text-body text-neutral mb-3">{

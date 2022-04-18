@@ -35,14 +35,14 @@ export default function Home() {
           ) :
           (<div key="cover">
             <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
-            <Navbar />
-            <Showcase />
-            <Ayat />
-            <Couple />
-            <Event />
-            <Closing />
           </div>)
         }
+        <Navbar />
+        <Showcase />
+        <Ayat />
+        <Couple />
+        <Event />
+        <Closing />
       </AnimatePresence>
     </main>
 
