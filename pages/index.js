@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
+import Head from 'next/head'
+
+
 import Navbar from '../components/Navbar'
 import Showcase from '../components/Showcase'
 import Ayat from '../components/Ayat'
@@ -27,24 +30,29 @@ export default function Home() {
 
 
   return (
-    <main className="font-lora text-dark overflow-hidden">
-      <AnimatePresence>
-        {isOpen ?
-          (
-            <Cover key="cover" openHandler={openInvitation} />
-          ) :
-          (<div key="cover">
-            <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
-            <Navbar />
-            <Showcase />
-            <Ayat />
-            <Couple />
-            <Event />
-            <Closing />
-          </div>)
-        }
-      </AnimatePresence>
-    </main>
+    <>
+      <Head>
+        <link rel="preload" href="https://fonts.cdnfonts.com/css/lemon-melon" as='font' />
+      </Head>
+      <main className="font-lora text-dark overflow-hidden">
+        <AnimatePresence>
+          {isOpen ?
+            (
+              <Cover key="cover" openHandler={openInvitation} />
+            ) :
+            (<div key="cover">
+              <SoundButton isPlaying={isPlaying} playPauseHandler={playPauseHandler} />
+              <Navbar />
+              <Showcase />
+              <Ayat />
+              <Couple />
+              <Event />
+              <Closing />
+            </div>)
+          }
+        </AnimatePresence>
+      </main>
 
+    </>
   )
 }
