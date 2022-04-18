@@ -19,11 +19,13 @@ module.exports = {
       },
       colors: {
         'neutral': '#F8FAF8',
+        'dark-neutral': '#EDEEED',
         'primary': '#CDDEEC',
         'dark': '#5C707F',
         'accent': '#EF798A',
-        'accent_bright': '#7FD1AE',
-        'cream': 'EFD8C1'
+        'accent-bright': '#7FD1AE',
+        'accent-dark': '#E38F9C',
+        'cream': '#EFD8C1'
       },
       fontFamily: {
         lora: ["Lora", "serif"],

@@ -5,8 +5,8 @@ import PaperTexture from '../public/webp/paper1.webp'
 
 export default function Showcase() {
     return (
-        <section id='showcase' className='relative'>
-            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
+        <section id='showcase' className='relative bg-dark-neutral'>
+            {/* <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' /> */}
             <div className="max-w-screen-sm mx-auto relative h-28">
                 <motion.div variants={showcaseVariants.fade} initial="initial" whileInView="animate" viewport={{ once: true }} className="absolute top-14 left-28">
                     <motion.div variants={closingVariants.wiggle}>

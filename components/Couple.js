@@ -6,8 +6,8 @@ import PaperTexture from '../public/webp/paper1.webp'
 
 export default function Couple() {
     return (
-        <section id='couple' className="w-full relative text-dark">
-            <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' />
+        <section id='couple' className="w-full relative text-dark bg-dark-neutral">
+            {/* <Image src={PaperTexture} alt="paper texture" layout='fill' placeholder='blur' objectFit='cover' /> */}
             <Parallax inView={[0.3, 0.4]} position={[10, -90]}>
                 <div className='w-full z-10 h-48 absolute -top-24 left-0'>
                     <Image src='/svg/paper-rip.svg' alt="paper rip" layout='fill' />

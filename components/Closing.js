@@ -7,8 +7,8 @@ import PaperTexture from '../public/webp/paper2.webp'
 
 export default function Closing() {
     return (
-        <section className="relative text-neutral">
-            <Image src={PaperTexture} alt="Paper texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="50% 0%" />
+        <section className="relative text-neutral bg-accent-dark">
+            {/* <Image src={PaperTexture} alt="Paper texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="50% 0%" /> */}
             <motion.div variants={closingVariants.parent} initial="initial" whileInView="animate" viewport={{ once: true }} className="relative max-w-screen-sm mx-auto text-center">
                 <motion.p variants={closingVariants.child} dir='rtl' lang='ar' className="font-vazirmatn text-3xl pt-14 mb-3 px-3">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ<br className='block sm:hidden' /> وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</motion.p>
                 <motion.p variants={closingVariants.child} className="body px-2 sm:px-0"><em>“Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta semoga Allah mempersatukan kalian berdua dalam kebaikan.”</em></motion.p>
