@@ -61,7 +61,7 @@ export default function Cover({ openHandler }) {
                         <motion.h1 variants={coverVariants.titleChildrenVariants} style={{ fontSize: '132px' }} className='font-lemon text-neutral'>A</motion.h1>
                     </motion.div>
                     <div className='relative top-10'>
-                        <Image src={Window} alt="flower on window" placeholder='blur' width={456} height={308} />
+                        <Image src="/webp/cover.webp" alt="flower on window" placeholder='blur' blurDataURL='/webp/cover.webp' width={456} height={308} />
                     </div>
                 </motion.div>
                 <motion.p variants={coverVariants.sentence} initial="initial" animate="animate" className="text-body text-neutral mb-3">{
