@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { eventVariants, ayatVariants, coverVariants } from '../helper/variants'
 import Parallax from './Parallax'
 import Countdown from './Countdown'
-// import WallTexture from '../public/webp/wall-texture.webp'
+import WallTexture from '../public/webp/wall-texture.webp'
 import Window from '../public/webp/window.webp'
 
 export default function Event() {
@@ -34,7 +34,7 @@ export default function Event() {
     })
     return (
         <section id='event' className="relative text-neutral bg-accent-bright">
-            {/* <Image src={WallTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="0% 100%" /> */}
+            <Image src={WallTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' objectPosition="0% 100%" />
             <div className="relative max-w-screen-lg mx-auto flex flex-col px-20 lg:px-0 lg:flex-row justify-center items-center lg:items-start pb-24 pt-24 md:pt-28 lg:pt-48 space-x-0 space-y-10 lg:space-y-0">
                 <motion.div variants={eventVariants.parent} initial="initial" whileInView="animate" viewport={{ once: true }} className='text-center lg:basis-5/12'>
                     <motion.h1 variants={eventVariants.children} className='title mb-5'>Akad Nikah</motion.h1>
