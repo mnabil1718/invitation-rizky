@@ -4,8 +4,8 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <link rel="preload" href="https://fonts.googleapis.com" />
-                <link rel="preload" href="https://fonts.cdnfonts.com" />
+                <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+                <link rel="dns-prefetch" href="https://fonts.cdnfonts.com" />
             </Head>
             <body>
                 <Main />
