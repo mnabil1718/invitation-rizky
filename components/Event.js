@@ -40,7 +40,7 @@ export default function Event() {
                     <motion.p variants={eventVariants.children} className="body">Pukul 08.00 - 10.00 WITA (Laki-laki)</motion.p>
                     <motion.p variants={eventVariants.children} className="body">Pukul 10.00 - 12.00 WITA (Perempuan)</motion.p>
                     <motion.div variants={eventVariants.childrenLine} className="h-0.25 bg-neutral w-20 mx-auto my-5"></motion.div>
-                    <motion.p variants={eventVariants.children} className="body mb-5 px-2">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</motion.p>
+                    <motion.p variants={eventVariants.children} className="body mb-5 px-2 sm:px-0">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</motion.p>
                     <Link href="https://www.instagram.com/lr_adriansyah/"><a target="_blank"><motion.button variants={eventVariants.children} className='outline-button mb-14'>Live Instagram</motion.button></a></Link>
                     <motion.div variants={eventVariants.children}>
                         <Countdown date="Sat May 14 2022 08:00:00 GMT+0800" url="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnM3MXBmMTNxbmo3am9ndWpqbXBnNTcwbDggNzlzdm9wcjJnbzJkNW9mNWIyZjI3b3N2dXNAZw&amp;tmsrc=79svopr2go2d5of5b2f27osvus%40group.calendar.google.com" />
@@ -54,7 +54,7 @@ export default function Event() {
                     <motion.h2 variants={eventVariants.children} className='subheadline'>Ahad, 29 Mei 2022</motion.h2>
                     <motion.p variants={eventVariants.children} className="body">Pukul 09.00 - 17.00 WIB</motion.p>
                     <motion.div variants={eventVariants.childrenLine} className="h-0.25 bg-neutral w-20 mx-auto my-5"></motion.div>
-                    <motion.p variants={eventVariants.children} className="body mb-14 px-2">Amma Alamia <br />
+                    <motion.p variants={eventVariants.children} className="body mb-14 px-2 sm:px-0">Amma Alamia <br />
                         Jl. Raya Pondok Bitung, Pasir Tengah, Sukaharja, Kec. Cijeruk, Kabupaten Bogor
                         <br />(Di Depan Ponpes Ibnu Taimiyah)
                     </motion.p>
