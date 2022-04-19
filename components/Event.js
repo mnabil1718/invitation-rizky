@@ -43,7 +43,7 @@ export default function Event() {
                     <motion.p variants={eventVariants.children} className="body mb-5 px-2 sm:px-0">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</motion.p>
                     <Link href="https://www.instagram.com/lr_adriansyah/"><a target="_blank"><motion.button variants={eventVariants.children} className='outline-button mb-14'>Live Instagram</motion.button></a></Link>
                     <motion.div variants={eventVariants.children}>
-                        <Countdown date="Sat May 14 2022 08:00:00 GMT+0800" url="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnM3MXBmMTNxbmo3am9ndWpqbXBnNTcwbDggNzlzdm9wcjJnbzJkNW9mNWIyZjI3b3N2dXNAZw&amp;tmsrc=79svopr2go2d5of5b2f27osvus%40group.calendar.google.com" />
+                        <Countdown date="Sat May 14 2022 08:00:00 GMT+0800" url="https://calendar.google.com/calendar/u/0?cid=Nzlzdm9wcjJnbzJkNW9mNWIyZjI3b3N2dXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" />
                     </motion.div>
                 </motion.div>
                 <div className='text-center basis-6/12'>
