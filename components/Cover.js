@@ -58,10 +58,10 @@ export default function Cover({ openHandler }) {
             <motion.section variants={coverVariants.bgVariants} exit='exit' className='fixed z-40 w-full h-screen bg-darker overflow-hidden'>
                 <Image src={NightTexture} alt="paint texture" placeholder='blur' layout='fill' objectFit='cover' />
                 <div className="relative z-10 max-w-screen-sm h-full mx-auto flex flex-col justify-end text-center">
-                    <motion.div variants={coverVariants.curvedVariants} initial="initial" animate="animate" style={{ marginLeft: '-110px' }} className='absolute top-20 left-1/2'>
-                        <Image src='/svg/curved.svg' alt="Rizky & Aisyah" placeholder='blur' blurDataURL='/svg/curved.svg' width={220} height={70} />
-                    </motion.div>
                     <div className='relative mx-auto w-fit h-fit mb-7'>
+                        <motion.div variants={coverVariants.curvedVariants} initial="initial" animate="animate" style={{ marginLeft: '-110px' }} className='absolute -top-8 left-1/2'>
+                            <Image src='/svg/curved.svg' alt="Rizky & Aisyah" placeholder='blur' blurDataURL='/svg/curved.svg' width={220} height={70} />
+                        </motion.div>
                         <motion.div variants={coverVariants.titleVariants} initial="initial" animate="animate" style={{ top: '35px', left: '50%', marginLeft: '-57px' }} className='absolute z-10 flex items-center space-x-1'>
                             <motion.h1 variants={coverVariants.titleChildrenVariants} style={{ fontSize: '132px' }} className='font-lemon text-neutral'>R</motion.h1>
                             <motion.h1 variants={coverVariants.titleChildrenVariants} style={{ fontSize: '76px' }} className='font-lemon text-neutral'>&</motion.h1>
