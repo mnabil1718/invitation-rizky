@@ -40,10 +40,10 @@ export default function Event() {
                     <motion.p variants={eventVariants.children} className="body">Pukul 08.00 - 10.00 WITA (Laki-laki)</motion.p>
                     <motion.p variants={eventVariants.children} className="body">Pukul 10.00 - 12.00 WITA (Perempuan)</motion.p>
                     <motion.div variants={eventVariants.childrenLine} className="h-0.25 bg-neutral w-20 mx-auto my-5"></motion.div>
-                    <motion.p variants={eventVariants.children} className="body mb-5 px-2 sm:px-0">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</motion.p>
+                    <motion.p variants={eventVariants.children} className="body mb-5 px-2">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</motion.p>
                     <Link href="https://www.instagram.com/lr_adriansyah/"><a target="_blank"><motion.button variants={eventVariants.children} className='outline-button mb-14'>Live Instagram</motion.button></a></Link>
                     <motion.div variants={eventVariants.children}>
-                        <Countdown date="Sat May 14 2022 08:00:00 GMT+0800" url="https://calendar.google.com/calendar/u/0?cid=Nzlzdm9wcjJnbzJkNW9mNWIyZjI3b3N2dXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" />
+                        <Countdown date="Sat May 14 2022 08:00:00 GMT+0800" url="http://www.google.com/calendar/event?action=TEMPLATE&dates=20220513T220000Z%2F20220514T040000Z&text=Akad%20Nikah%20Rizky%20dan%20Aisyah&location=https%3A%2F%2Fmaps.google.com%2Fmaps%2Fdir%2F%2F-8.568107%2C116.10915%2F%40-8.568107%2C116.10915%2C16z&details=Pukul%2008.00%20-%2010.00%20WITA%20(Laki-laki)%0APukul%2010.00%20-%2012.00%20WITA%20(Perempuan)%0AJl.%20dr.%20Soetomo%2C%20Gg.%20Setia%20Kawan%2C%20Lingk.%20Karang%20Baru%20Selatan%2C%20Kota%20Mataram%20-%20Nusa%20Tenggara%20Barat" />
                     </motion.div>
                 </motion.div>
                 <div className='text-center basis-6/12'>
@@ -59,7 +59,7 @@ export default function Event() {
                         <br />(Di Depan Ponpes Ibnu Taimiyah)
                     </motion.p>
                     <motion.div variants={eventVariants.children}>
-                        <Countdown date="Sun May 29 2022 09:00:00 GMT+0700" url="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MmdkOTk5cWxlcWFtZWZmMm8xMzBhY2pjbDEgNzlzdm9wcjJnbzJkNW9mNWIyZjI3b3N2dXNAZw&amp;tmsrc=79svopr2go2d5of5b2f27osvus%40group.calendar.google.com" />
+                        <Countdown date="Sun May 29 2022 09:00:00 GMT+0700" url="http://www.google.com/calendar/event?action=TEMPLATE&dates=20220529T020000Z%2F20220529T100000Z&text=Walimatul%20Ursy%20Rizky%20dan%20Aisyah&location=https%3A%2F%2Fmaps.google.com%2Fmaps%2Fdir%2F%2FAmmA%2BAlamiA%2B8QQ8%252BR6P%2BSukaharja%2BCijeruk%2C%2BBogor%2BRegency%2C%2BWest%2BJava%2B16740%2F%40-6.6604073%2C106.7655704%2C16z%2Fdata%3D!4m5!4m4!1m0!1m2!1m1!1s0x2e69cf4d7f695abb%3A0xc793a803c96afc95&details=Amma%20Alamia%0AJl.%20Raya%20Pondok%20Bitung%2C%20Pasir%20Tengah%2C%20Sukaharja%2C%20Kec.%20Cijeruk%2C%20Kabupaten%20Bogor%0A(Di%20Depan%20Ponpes%20Ibnu%20Taimiyah)" />
                     </motion.div>
                 </motion.div>
             </div>
