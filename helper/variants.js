@@ -85,7 +85,7 @@ export const coverVariants = {
     },
     buttonVariants: {
         initial: {
-            y: 130,
+            y: 150,
         },
         animate: {
             y: 0,
@@ -96,6 +96,19 @@ export const coverVariants = {
             }
         }
     },
+    curvedVariants: {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delay: 2.2,
+                duration: 1.7,
+                ease: 'easeOut',
+            }
+        }
+    }
 }
 
 export const soundVariants = {

@@ -43,7 +43,7 @@ export default function Event() {
                     <motion.p variants={eventVariants.children} className="body mb-5 px-2">Jl. dr. Soetomo, Gg. Setia Kawan, Lingk. Karang Baru Selatan, Kota Mataram - Nusa Tenggara Barat</motion.p>
                     <Link href="https://www.instagram.com/lr_adriansyah/"><a target="_blank"><motion.button variants={eventVariants.children} className='outline-button mb-14'>Live Instagram</motion.button></a></Link>
                     <motion.div variants={eventVariants.children}>
-                        <Countdown date="Sat May 14 2022 08:00:00 GMT+0800" url="https://calendar.google.com/event?action=TEMPLATE&tmeid=MnB0aGxqdGYwbWgwZDNuOXJtZmo0Ym9vbjQgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com" />
+                        <Countdown date="Sat May 14 2022 08:00:00 GMT+0800" url="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnM3MXBmMTNxbmo3am9ndWpqbXBnNTcwbDggNzlzdm9wcjJnbzJkNW9mNWIyZjI3b3N2dXNAZw&amp;tmsrc=79svopr2go2d5of5b2f27osvus%40group.calendar.google.com" />
                     </motion.div>
                 </motion.div>
                 <div className='text-center basis-6/12'>
@@ -59,7 +59,7 @@ export default function Event() {
                         <br />(Di Depan Ponpes Ibnu Taimiyah)
                     </motion.p>
                     <motion.div variants={eventVariants.children}>
-                        <Countdown date="Sun May 29 2022 09:00:00 GMT+0700" url="https://calendar.google.com/event?action=TEMPLATE&tmeid=NjRhZXRhanByNzE2Z29pN3YycGpmYjJnM3MgY3VjaWJhanUxMjNAbQ&tmsrc=cucibaju123%40gmail.com" />
+                        <Countdown date="Sun May 29 2022 09:00:00 GMT+0700" url="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MmdkOTk5cWxlcWFtZWZmMm8xMzBhY2pjbDEgNzlzdm9wcjJnbzJkNW9mNWIyZjI3b3N2dXNAZw&amp;tmsrc=79svopr2go2d5of5b2f27osvus%40group.calendar.google.com" />
                     </motion.div>
                 </motion.div>
             </div>
