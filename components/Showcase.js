@@ -49,7 +49,7 @@ export default function Showcase() {
                     </div>
                     <motion.div variants={showcaseVariants.invitedChildrenVariants} className="flex items-center justify-center space-x-3">
                         <motion.div variants={showcaseVariants.line} initial="initial" whileInView="animate" className='bg-dark h-0.25 w-12'></motion.div>
-                        <h3 className='font-alice text-xl text-dark'>Syawal 1443 / Mei 2022</h3>
+                        <h3 className='font-alice text-xl text-dark'>Syawal 1443 H / Mei 2022</h3>
                         <motion.div variants={showcaseVariants.line} initial="initial" whileInView="animate" className='bg-dark h-0.25 w-12'></motion.div>
                     </motion.div>
                 </motion.div>

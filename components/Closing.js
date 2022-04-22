@@ -41,7 +41,7 @@ export default function Closing() {
                 </div>
                 <div className='relative w-fit h-fit mx-auto mb-14'>
                     <Parallax inView={[0.8, 1]} position={[600, 0]}>
-                        <Link href="https://www.instagram.com/lr_adriansyah/"><a target="_blank"><Image className='drop-shadow-md cursor-pointer hover:scale-110 ease-300' src="/webp/letter.webp" alt="Love letter" width={150} height={150} /></a></Link>
+                        <Link href="https://www.instagram.com/p/Ccpbt_3BMyu/?igshid=YmMyMTA2M2Y="><a target="_blank"><Image className='drop-shadow-md cursor-pointer hover:scale-110 ease-300' src="/webp/letter.webp" alt="Love letter" width={150} height={150} /></a></Link>
                     </Parallax>
                     <motion.div variants={closingVariants.ucapan} initial="initial" whileInView="animate" className="absolute -bottom-14 -left-20 transform -rotate-20">
                         <Image className='opacity-70' src='/svg/berikan-ucapan.svg' alt="berikan ucapan" width={88 * 1.5} height={84.21 * 1.5} />
