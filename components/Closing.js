@@ -1,9 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { closingVariants } from '../helper/variants'
 import Parallax from './Parallax'
 import Title from '../public/webp/title.webp'
-// import PaperTexture from '../public/webp/paper2.webp'
 
 export default function Closing() {
     return (
@@ -39,10 +39,13 @@ export default function Closing() {
                         </motion.div>
                     </Parallax>
                 </div>
-                <div className='mb-14'>
+                <div className='relative w-fit h-fit mx-auto mb-14'>
                     <Parallax inView={[0.8, 1]} position={[600, 0]}>
-                        <Image className='drop-shadow-md' src="/webp/letter.webp" alt="Love letter" width={150} height={150} />
+                        <Link href="https://www.instagram.com/lr_adriansyah/"><a target="_blank"><Image className='drop-shadow-md cursor-pointer hover:scale-110 ease-300' src="/webp/letter.webp" alt="Love letter" width={150} height={150} /></a></Link>
                     </Parallax>
+                    <motion.div variants={closingVariants.ucapan} initial="initial" whileInView="animate" className="absolute -bottom-14 -left-20 transform -rotate-20">
+                        <Image className='opacity-70' src='/svg/berikan-ucapan.svg' alt="berikan ucapan" width={88 * 1.5} height={84.21 * 1.5} />
+                    </motion.div>
                 </div>
                 <small className='font-work text-sm text-white opacity-50 mb-2'>Invitation created by:</small>
                 <div className='pb-24'>

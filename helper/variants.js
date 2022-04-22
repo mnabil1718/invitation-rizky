@@ -467,6 +467,18 @@ export const eventVariants = {
 }
 
 export const closingVariants = {
+    ucapan: {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delay: 1,
+                duration: 1,
+            }
+        }
+    },
     fadeLong: {
         initial: {
             opacity: 0,

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.cdnfonts.com/css/lemon-melon');
 @tailwind base;
 @tailwind components;
@@ -39,4 +40,8 @@
 
 .outline-button-light {
   @apply py-3 px-5 border border-neutral rounded-full text-neutral hover:text-dark hover:bg-neutral transition ease-out duration-300;
+}
+
+.ease-300 {
+  @apply transition ease-out duration-300;
 }

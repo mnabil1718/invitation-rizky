@@ -34,6 +34,7 @@ module.exports = {
         lemon: ["Lemon Melon", "sans-serif"],
         vazirmatn: ["Vazirmatn", "sans-serif"],
         work: ["Work Sans", "sans-serif"],
+        gloria: ["Gloria Hallelujah", "cursive"],
 
       }
     },
